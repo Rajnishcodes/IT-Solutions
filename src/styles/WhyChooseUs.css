@@ -1,0 +1,99 @@
+.why-choose-us {
+  background: #fcf9f9;
+  margin: 0px auto ;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 10px 30px 50px;
+  margin: -29px 20px 30px;
+}
+
+.choose-section, .how-it-works {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.choose-section h2,
+.how-it-works h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.icon {
+  font-size: 32px;
+  color: #2b6ff8;
+  margin-bottom: 15px;
+}
+
+.card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.step {
+  flex: 1 1 220px;
+  max-width: 280px;
+  text-align: center;
+  padding: 20px;
+}
+
+.step .icon {
+  font-size: 32px;
+  color: #2b6ff8;
+  margin-bottom: 10px;
+}
+
+.step h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step {
+    max-width: 100%;
+  }
+}
