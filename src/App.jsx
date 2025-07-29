@@ -5,6 +5,8 @@ import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import About from "./pages/About";
 import WhyChooseUs from "./pages/WhyChooseUs";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
@@ -21,6 +23,8 @@ const App = () => {
           }
         />
         <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} /> 
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>

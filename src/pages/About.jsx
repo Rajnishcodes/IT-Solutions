@@ -44,7 +44,7 @@ const AboutUs = () => {
       <section className="about-values">
         <h2>Core Values</h2>
         <div className="value-cards">
-          <div className="value-card">
+          <div className="value-card">  
             <FaLightbulb className="icon" />
             <h4>Innovation</h4>
             <p>We foster creativity and embrace new ideas.</p>

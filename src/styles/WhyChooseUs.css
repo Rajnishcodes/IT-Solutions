@@ -4,6 +4,7 @@
   font-family: 'Segoe UI', sans-serif;
   padding: 10px 30px 50px;
   margin: -29px 20px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .choose-section, .how-it-works {
@@ -20,7 +21,7 @@
 
 .grid {
   display: grid;
-  gap: 20px;
+  gap: 90px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
@@ -28,13 +29,13 @@
   background: #fff;
   padding: 30px 20px;
   border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
   transition: all 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 .icon {

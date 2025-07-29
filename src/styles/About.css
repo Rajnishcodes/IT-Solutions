@@ -21,7 +21,7 @@
 .about-text {
   flex: 1;
   min-width: 280px;
-  margin-top: 0;
+  margin-top: -350px;
 }
 
 .about-text h1 {

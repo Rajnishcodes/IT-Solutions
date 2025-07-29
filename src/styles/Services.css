@@ -1,191 +1,86 @@
-/* src/styles/ServicesPage.css */
-.services-page-container {
-  width: 100%;
-  min-height: 100vh;
-  background-color: #f0f2f5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 20px;
-  box-sizing: border-box;
-}
-
-.services-header {
-  width: 100%;
+.services {
+  background: linear-gradient(145deg, #3f2b96, #a8c0ff);
+  color: white;
+  padding: 12px 20px 30px;
+  margin: 10px 20px 30px;
   text-align: center;
-  margin-bottom: 50px;
-  position: relative;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.services-title {
-  font-size: 3.5rem;
+.services-header .logo {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.services-header .title {
+  font-size: 2.5rem;
   font-weight: 700;
-  color: #333;
-  position: relative;
-  display: inline-block;
-  margin: 0;
+  margin-bottom: 40px;
 }
 
-.services-title::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 4px;
-  background-color: #007bff;
-  border-radius: 2px;
-}
-
-.services-cards-grid {
+.services-cards {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
-  max-width: 1200px;
-  width: 100%;
+  margin-bottom: 40px;
 }
 
-/* Responsive adjustments for ServicesPage */
-@media (max-width: 1024px) {
-  .services-title {
-    font-size: 3rem;
-  }
-  .services-cards-grid {
-    gap: 20px;
-  }
+.services-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 30px 20px;
+  width: 300px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
+.services-card .icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.services-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.services-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #e0e0e0;
+}
+
+.cta .contact-btn {
+  background: linear-gradient(135deg, #6f57ff, #7f6bff);
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta .contact-btn:hover {
+  background: linear-gradient(135deg, #5f47ff, #6a5eff);
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .services-page-container {
-    padding: 30px 15px;
-  }
-  .services-title {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-  }
-  .services-title::after {
-    bottom: -8px;
-    width: 60px;
-    height: 3px;
-  }
-  .services-cards-grid {
+  .cards {
     flex-direction: column;
     align-items: center;
-    gap: 25px;
   }
-}
 
-@media (max-width: 480px) {
-  .services-page-container {
-    padding: 20px 10px;
+  .card {
+    width: 90%;
   }
-  .services-title {
+
+  .services-header .title {
     font-size: 2rem;
-    margin-bottom: 30px;
-  }
-  .services-title::after {
-    bottom: -5px;
-    width: 50px;
-    height: 2px;
-  }
-}
-
-/* src/styles/ServiceCard.css */
-.service-card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 20px;
-  flex: 1;
-  min-width: 280px;
-  max-width: 380px;
-  margin: 15px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
-}
-
-.service-card-image-container {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  position: relative;
-}
-
-.service-card-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.service-card-title {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #007bff;
-  margin: 25px 20px 15px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
-}
-
-.service-card-list {
-  list-style: none;
-  padding: 0 20px;
-  margin: 0;
-}
-
-.service-card-list-item {
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 10px;
-  position: relative;
-  padding-left: 25px;
-}
-
-.service-card-list-item::before {
-  content: '•';
-  color: #007bff;
-  font-size: 1.2rem;
-  position: absolute;
-  left: 0;
-  top: -2px;
-}
-
-/* Responsive adjustments for ServiceCard */
-@media (max-width: 768px) {
-  .service-card {
-    margin: 10px;
-    min-width: unset;
-    max-width: 90%;
-  }
-
-  .service-card-title {
-    font-size: 1.3rem;
-    margin: 20px 15px 10px;
-  }
-
-  .service-card-list-item {
-    font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .service-card-image-container {
-    height: 180px;
-  }
-  .service-card-title {
-    font-size: 1.2rem;
   }
 }
