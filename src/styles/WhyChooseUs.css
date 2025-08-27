@@ -1,12 +1,8 @@
 .why-choose-us {
   background: #fcf9f9;
-  margin: 0px auto ;
+  margin: -29px 20px 30px;
   font-family: 'Segoe UI', sans-serif;
   padding: 10px 30px 50px;
-<<<<<<< HEAD
-=======
-  margin: -29px 20px 30px;
->>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -31,11 +27,7 @@
 .card {
   background: #fff;
   padding: 30px 20px;
-<<<<<<< HEAD
   border-radius: 30px 67px 47px;
-=======
-  border-radius: 12px;
->>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
   box-shadow: 0 6px 16px rgba(0,0,0,0.2);
   transition: all 0.3s ease;
 }
@@ -62,7 +54,6 @@
   color: #555;
 }
 
-<<<<<<< HEAD
 /* How It Works Section */
 .how-it-works {
   margin-top: 4rem;
@@ -85,10 +76,10 @@
 /* Each Step Box */
 .step-box {
   background: #fff;
-    padding: 30px 20px;
-    border-radius: 30px 67px 47px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
+  padding: 30px 20px;
+  border-radius: 30px 67px 47px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
 .step-box:hover {
@@ -106,8 +97,8 @@
 /* Title & Description */
 .step-box h4 {
   font-size: 1.1rem;
-    margin-bottom: 10px;
-    font-weight: 600;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .step-box p {
@@ -116,49 +107,14 @@
   color: #555;
 }
 
-
-=======
-.steps {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  margin-top: 40px;
-}
-
-.step {
-  flex: 1 1 220px;
-  max-width: 280px;
-  text-align: center;
-  padding: 20px;
-}
-
-.step .icon {
-  font-size: 32px;
-  color: #2b6ff8;
-  margin-bottom: 10px;
-}
-
-.step h4 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.step p {
-  font-size: 0.95rem;
-  color: #555;
-}
-
->>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .steps {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
-  .step {
+  .step-box {
     max-width: 100%;
   }
 }
