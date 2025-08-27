@@ -1,0 +1,136 @@
+/* === Hero Section === */
+.mobile-hero {
+  background: url("/src/assets/heroImage.png") no-repeat center center / cover;
+  width: 100%;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.mobile-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.mobile-hero p {
+  font-size: 1.2rem;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* === Services Section === */
+.mobile-services {
+  padding: 80px 20px;
+  background: #f9fbfd;
+  text-align: center;
+}
+
+.mobile-services h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.mobile-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 30px;
+}
+
+.mobile-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px 20px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.mobile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.mobile-icon {
+  font-size: 40px;
+  color: #ff6a00;
+  margin-bottom: 20px;
+}
+
+/* === CTA Section === */
+.mobile-cta {
+  background: linear-gradient(135deg, #6f57ff, #ff52ec);;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.mobile-cta h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.mobile-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mobile-cta .contact-btn {
+  background: #ff6a00;
+  color: #fff;
+  border: none;
+  padding: 14px 34px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.mobile-cta .contact-btn:hover {
+  background: #e85b00;
+}
+
+/* === Responsive === */
+@media (max-width: 992px) {
+  .mobile-hero h1 {
+    font-size: 2.4rem;
+  }
+  .mobile-hero p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-hero {
+    padding: 70px 15px 50px;
+  }
+  .mobile-hero h1 {
+    font-size: 2rem;
+  }
+  .mobile-hero p {
+    font-size: 0.95rem;
+  }
+  .mobile-cta h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-card {
+    padding: 20px 15px;
+  }
+  .mobile-card h3 {
+    font-size: 1.1rem;
+  }
+  .mobile-card p {
+    font-size: 0.9rem;
+  }
+}

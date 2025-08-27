@@ -1,0 +1,116 @@
+.partners-section {
+  padding: 60px 20px;
+  background: url("../assets/heroImage.png") no-repeat center center/cover;
+  text-align: center;
+}
+
+/* Title */
+.partners-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 50px;
+  background: linear-gradient(90deg, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Container grid */
+.partners-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 25px 20px 30px 40px;
+  margin: 20px 20px 20px 20px;
+  margin-left: 180px;
+}
+
+/* Partner card */
+.partner-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.partner-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(255, 165, 0, 0.6);
+}
+
+.partner-card img {
+  max-width: 120px;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4)); 
+}
+
+.partner-card h3 {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* 🔹 Responsiveness */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .partners-title {
+    font-size: 2rem;
+  }
+
+  .partner-card img {
+    max-width: 100px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .partners-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .partners-container {
+    gap: 20px;
+  }
+
+  .partner-card {
+    padding: 20px 15px;
+  }
+
+  .partner-card img {
+    max-width: 80px;
+  }
+
+  .partner-card h3 {
+    font-size: 1rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .partners-title {
+    font-size: 1.5rem;
+  }
+
+  .partner-card {
+    padding: 15px 10px;
+    border-radius: 15px;
+  }
+
+  .partner-card img {
+    max-width: 65px;
+  }
+
+  .partner-card h3 {
+    font-size: 0.9rem;
+  }
+}

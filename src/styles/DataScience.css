@@ -1,0 +1,109 @@
+/* === Page Wrapper === */
+.ds-page {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
+  background: #f9fafb;
+  padding: 0;
+  margin: 0;
+}
+
+/* === Hero Section === */
+.ds-hero {
+  background: url("/src/assets/heroImage.png") no-repeat center center / cover;
+  width: 100%;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+.ds-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.ds-hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* === Services Section === */
+.ds-services {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.ds-services h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #111827;
+}
+
+/* Grid */
+.ds-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 2rem;
+}
+
+/* Cards */
+.ds-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ds-card:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
+}
+.ds-icon {
+  font-size: 2.5rem;
+  color: #2563eb;
+  margin-bottom: 1rem;
+}
+.ds-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: #111827;
+}
+.ds-card p {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+/* === CTA Section === */
+.ds-cta {
+  background: linear-gradient(135deg, #6f57ff, #ff52ec);;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.ds-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.ds-cta p {
+  max-width: 650px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+.contact-btn {
+  background: white;
+  color: #1e3a8a;
+  font-weight: bold;
+  padding: 0.8rem 2rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.contact-btn:hover {
+  background: #f3f4f6;
+}

@@ -1,0 +1,131 @@
+/* === Hero Section === */
+.aiml-hero {
+  background: url("/src/assets/heroImage.png") no-repeat center center / cover;
+  width: 100%;
+  height: 100vh; /* take half of the viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.aiml-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.aiml-hero p {
+  font-size: 1.2rem;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* === Features Section === */
+.aiml-features {
+  padding: 80px 20px;
+  background: #f9fbfd;
+  text-align: center;
+}
+
+.aiml-features h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.aiml-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);;
+  gap: 30px;
+}
+
+.aiml-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px 20px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aiml-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.aiml-icon {
+  font-size: 40px;
+  color: #2575fc;
+  margin-bottom: 20px;
+}
+
+/* === CTA Section === */
+.aiml-cta {
+  background: linear-gradient(135deg, #6f57ff, #ff52ec);
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.aiml-cta h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.aiml-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aiml-cta .contact-btn {
+  background: #2575fc;
+  color: #fff;
+  border: none;
+  padding: 14px 34px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.aiml-cta .contact-btn:hover {
+  background: #1e3c72;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .aiml-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .aiml-hero p {
+    font-size: 1rem;
+  }
+
+  .aiml-cta h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .aiml-hero {
+    padding: 70px 15px 50px;
+  }
+
+  .aiml-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .aiml-hero p {
+    font-size: 0.95rem;
+  }
+
+  .aiml-cta p {
+    font-size: 1rem;
+  }
+}

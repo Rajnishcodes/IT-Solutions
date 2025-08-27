@@ -1,0 +1,283 @@
+  .navbar {
+    position: absolute; /* 🔑 overlay hero section */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 18px 40px;
+    background: transparent; /* 🔑 remove white background */
+    color: white;
+    z-index: 1000; /* ensure it's above hero */
+  }
+
+  /* === Logo === */
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  .navbar-texth1 {
+    color: #ffffff; /* white for hero overlay */
+    font-size: 20px;
+  }
+
+  .navbar-logo img {
+    width: 42px;
+    height: 42px;
+  }
+
+  /* === Links === */
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .navbar-links li {
+    position: relative;
+  }
+
+  .navbar-links li a {
+    text-decoration: none;
+    color: #ffffff; /* white text */
+    font-weight: 500;
+    transition: 0.3s;
+    font-size: 1rem;
+    padding-top: 2px;
+    position: relative;
+  }
+
+  /* ✅ Underline hover effect */
+  .navbar-links li a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    transition: width 0.3s ease;
+  }
+
+  .navbar-links li:hover a::after {
+    width: 100%;
+  }
+
+  .navbar-links li a:hover {
+    opacity: 0.8;
+  }
+
+  /* === Dropdown Styles === */
+  .dropdown {
+    position: relative;
+  }
+
+  /* 🔹 Default dropdowns */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    min-width: 200px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 6px;
+    z-index: 2000;
+    padding: 10px 0;
+    list-style: none;
+  }
+
+  .dropdown-content li {
+    padding: 10px 16px;
+  }
+
+  .dropdown-content li a {
+    text-decoration: none;
+    color: #24272c; /* dark text inside dropdown */
+    font-size: 0.95rem;
+    display: block;
+  }
+
+  .dropdown-content li a:hover {
+    background: #f5f5f5;
+  }
+  /* === Reset dropdown trigger buttons === */
+  .dropbtn {
+    background: transparent;
+    border: none;
+    color: #ffffff; /* match navbar links */
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s;
+  }
+
+  .dropbtn:hover {
+    opacity: 0.8;
+  }
+
+  /* ✅ Optional underline hover effect like links */
+  .dropbtn::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    transition: width 0.3s ease;
+  }
+
+  .dropdown:hover .dropbtn::after {
+    width: 100%;
+  }
+
+
+  /* 🔹 Mega Dropdown (Services) */
+  .mega-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    padding: 20px 30px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    min-width: 500px;
+    z-index: 2000;
+  }
+
+  .mega-dropdown h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #24272c;
+  }
+
+  .mega-dropdown button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 8px 12px;
+    margin: 4px 0;
+    background: #f5f5f5;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .mega-dropdown button:hover {
+    background: #e0e0e0;
+  }
+
+  .mega-dropdown .view-all {
+    font-weight: bold;
+    color: #6f57ff;
+    background: transparent;
+  }
+
+  /* === Show class (JS toggle) === */
+  .dropdown-content.show,
+  .mega-dropdown.show {
+    display: block;
+  }
+
+  .mega-dropdown.show {
+    display: grid;
+    margin-left: -155px;
+    transition: background 0.3s ease;
+  }
+
+  /* === Contact link (styled like others but with gradient hover underline) === */
+.contact-btn {
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  text-decoration: none !important;
+  color: #ffffff !important; /* white text */
+  position: relative !important;
+  padding: 0 !important;
+  border: none !important;
+  background: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transition: 0.3s !important;
+}
+
+/* Gradient underline effect */
+.contact-btn::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #ff52ec, #6f57ff);
+  transition: width 0.3s ease;
+}
+
+.contact-btn:hover::after {
+  width: 100%;
+}
+
+.contact-btn:hover {
+  opacity: 0.8;
+}
+
+/* === Hamburger Button === */
+.hamburger {
+  display: none; /* hidden on desktop */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+
+
+/* ✅ Show hamburger on mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none; /* hidden by default */
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    padding: 15px 10px;
+    background: rgba(0, 0, 0, 0.85); /* dark dropdown */
+    border-radius: 8px;
+  }
+
+  .navbar-links.active {
+    display: flex; /* show when toggled */
+  }
+}

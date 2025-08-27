@@ -1,0 +1,116 @@
+/* === Page Wrapper === */
+.hr-page {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
+  background: #f9fafb;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Hero Section === */
+.hr-hero {
+  background: url("/src/assets/heroImage.png") no-repeat center center / cover;
+  width: 100%;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+.hr-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.hr-hero p {
+  font-size: 1.2rem;
+  max-width: 720px;
+  margin: 0 auto;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+/* === Features Section === */
+.hr-features {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.hr-features h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  color: #111827;
+  font-weight: 600;
+}
+
+.hr-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 2rem;
+}
+
+.hr-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+.hr-card:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  transform: translateY(-6px);
+}
+.hr-icon {
+  font-size: 2.5rem;
+  color: #0ea5e9;
+  margin-bottom: 1rem;
+}
+.hr-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.6rem;
+  color: #111827;
+  font-weight: 600;
+}
+.hr-card p {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* === CTA Section === */
+.hr-cta {
+  background: linear-gradient(135deg, #6f57ff, #ff52ec);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.hr-cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.hr-cta p {
+  max-width: 650px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+.contact-btn {
+  background: linear-gradient(135deg, #0ea5e9, #14b8a6);
+  color: white;
+  font-weight: bold;
+  padding: 0.9rem 2.2rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+.contact-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}

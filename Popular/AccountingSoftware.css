@@ -1,0 +1,119 @@
+/* General Page */
+.accounting-page {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  
+}
+
+/* Hero Section */
+.accounting-hero {
+  background: url("/src/assets/heroImage.png") no-repeat center center / cover;
+  width: 100%;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.accounting-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.accounting-hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 25px;
+}
+
+/* Scoped Button */
+.accounting-page .contact-btn {
+  background: #fff;
+  color: #023e8a; /* darker for better contrast */
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.accounting-page .contact-btn:hover {
+  background: #0077b6;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Features Section */
+.accounting-features {
+  text-align: center;
+  padding: 50px 20px 80px; /* extra bottom padding for spacing */
+}
+
+.accounting-features h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+/* Grid Layout */
+.accounting-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Feature Cards */
+.accounting-card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accounting-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.accounting-icon {
+  font-size: 2.5rem;
+  color: #0077b6;
+  margin-bottom: 15px;
+}
+
+.accounting-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.accounting-card p {
+  font-size: 1rem;
+  color: #555;
+  text-align: left; /* better readability */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .accounting-hero {
+    padding: 50px 15px; /* reduced padding for small screens */
+  }
+
+  .accounting-hero h1 {
+    font-size: 2rem;
+  }
+
+  .accounting-hero p {
+    font-size: 1rem;
+  }
+}

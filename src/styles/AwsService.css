@@ -1,0 +1,128 @@
+.aws-hero {
+  background: url("/src/assets/heroImage.png") no-repeat center center / cover;
+  width: 100%;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.aws-overlay {
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aws-container {
+  width: 90%;
+  max-width: 1200px;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.aws-hero-content {
+  margin-bottom: 60px;
+}
+
+.aws-icon {
+  font-size: 4rem;
+  color: #ff9900;
+  margin-bottom: 20px;
+}
+
+.aws-hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.aws-hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aws-btn {
+  display: inline-block;
+  background: #ff9900;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.aws-btn:hover {
+  background: #e68a00;
+  transform: translateY(-2px);
+}
+
+/* Features Section */
+.aws-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.aws-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.aws-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #ff9900;
+  margin-bottom: 15px;
+}
+
+.aws-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.aws-card p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .aws-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .aws-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .aws-hero-content p {
+    font-size: 1rem;
+  }
+
+  .aws-features {
+    grid-template-columns: 1fr;
+  }
+}

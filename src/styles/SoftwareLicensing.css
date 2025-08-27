@@ -1,0 +1,131 @@
+/* === Hero Section === */
+.licensing-hero {
+  background: url("/src/assets/heroImage.png") no-repeat center center / cover;
+  width: 100%;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.licensing-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.licensing-hero p {
+  font-size: 1.2rem;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* === Features Section === */
+.licensing-features {
+  padding: 80px 20px;
+  text-align: center;
+  background: #fafbff;
+}
+
+.licensing-features h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.licensing-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+
+.licensing-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px 20px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.licensing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.licensing-icon {
+  font-size: 40px;
+  color: #6c5ce7;
+  margin-bottom: 20px;
+}
+
+/* === CTA Section === */
+.licensing-cta {
+  background: linear-gradient(135deg, #6f57ff, #ff52ec);
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.licensing-cta h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.licensing-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.licensing-cta .contact-btn {
+  background: #6c5ce7;
+  color: #fff;
+  border: none;
+  padding: 14px 34px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.licensing-cta .contact-btn:hover {
+  background: #0984e3;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .licensing-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .licensing-hero p {
+    font-size: 1rem;
+  }
+
+  .licensing-cta h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .licensing-hero {
+    padding: 70px 15px 50px;
+  }
+
+  .licensing-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .licensing-hero p {
+    font-size: 0.95rem;
+  }
+
+  .licensing-cta p {
+    font-size: 1rem;
+  }
+}
