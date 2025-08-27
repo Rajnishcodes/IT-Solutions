@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   .navbar {
     position: absolute; /* 🔑 overlay hero section */
     top: 0;
@@ -279,5 +280,114 @@
 
   .navbar-links.active {
     display: flex; /* show when toggled */
+=======
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* KEY: Allows wrapping on smaller screens */
+  padding: 18px 20px;
+  background: linear-gradient(90deg, #007BFF 20%, #00AFFF 130%);
+  color: white;
+  border-radius: 30px 30px 0 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px 20px -9px;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.navbar-logo img {
+  width: 42px;
+  height: 42px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.navbar-links li a:hover {
+  opacity: 0.8;
+}
+
+.contact-btn {
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #ff52ec, #6f57ff);
+  border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+/* 🔻 Responsive Fixes for Small Screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    padding-left: 10px; /* ✅ Add this for spacing */
+    background-color: transparent; /* Optional: set bg if needed */
+  }
+
+  .navbar-links li a {
+    font-size: 1rem;
+    color: white; /* ✅ Ensure it's visible on mobile */
+  }
+
+  .contact-btn {
+    align-self: flex-start;
+    margin-top: 6px;
+    margin-left: 0; /* ✅ Reset margin */
+  }
+}
+
+
+@media (max-width: 480px) {
+  .navbar-logo {
+    font-size: 16px;
+  }
+
+  .navbar-logo img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .navbar-links {
+    gap: 10px;
+  }
+
+  .contact-btn {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+>>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
   }
 }

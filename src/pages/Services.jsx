@@ -1,13 +1,17 @@
 import React from "react";
 import "../styles/Services.css";
+<<<<<<< HEAD
 import ComputerIcon from "@mui/icons-material/Computer";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import { Button } from "@mui/material";
+=======
+>>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
 
 const services = [
   {
     title: "Web Development",
+<<<<<<< HEAD
     description:
       "Custom websites and web applications tailored to your business needs.",
     icon: <ComputerIcon fontSize="large" color="primary" />,
@@ -23,6 +27,20 @@ const services = [
     description:
       "Expert advice to optimize your IT infrastructure and strategy.",
     icon: <BusinessCenterIcon fontSize="large" color="success" />,
+=======
+    description: "Custom websites and web applications tailored to your business needs.",
+    icon: "💻", // You can replace this with an image later
+  },
+  {
+    title: "AI Integration",
+    description: "Leveraging artificial intelligence to enhance your processes and systems.",
+    icon: "🧠",
+  },
+  {
+    title: "IT Consulting",
+    description: "Expert advice to optimize your IT infrastructure and strategy.",
+    icon: "📝",
+>>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
   },
 ];
 
@@ -45,6 +63,7 @@ const ServicesSection = () => {
       </div>
 
       <div className="cta">
+<<<<<<< HEAD
         <Button
           variant="contained"
           color="primary"
@@ -54,6 +73,9 @@ const ServicesSection = () => {
         >
           Contact Us
         </Button>
+=======
+        <button className="contact-btn">Contact Us</button>
+>>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
       </div>
     </section>
   );

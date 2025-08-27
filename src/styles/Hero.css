@@ -1,4 +1,5 @@
 .hero {
+<<<<<<< HEAD
   background: url("../assets/heroImage.png") no-repeat center center/cover;
   width: 100%;
   min-height: 100vh; /* 🔑 full height for a modern hero */
@@ -60,6 +61,61 @@
 }
 
 /* === Buttons === */
+=======
+  background: linear-gradient(90deg, #007BFF 20%, #00AFFF 130%);
+  color: white;
+  max-width: 100%;
+  height: 680px;
+  margin: 0px auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  overflow: hidden;
+  padding: 10px 30px 50px;
+  margin: 10px 20px 30px;
+}
+
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 50px;
+  position: relative;
+  flex-direction: row;
+}
+
+.hero-text {
+  flex: 1 1 500px;
+  min-width: 300px;
+  padding: 20px;
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.hero-text h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  color: #e0e0e0;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+>>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
 .hero-buttons {
   display: flex;
   gap: 15px;
@@ -69,6 +125,7 @@
 
 .btn-primary {
   background: linear-gradient(135deg, #ff52ec, #6f57ff);
+<<<<<<< HEAD
   padding: 14px 28px;
   border: none;
   color: white;
@@ -82,10 +139,24 @@
 .btn-primary:hover {
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 6px 20px rgba(111, 87, 255, 0.6);
+=======
+  padding: 12px 22px;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #e744ff, #5a3dff);
+>>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
 }
 
 .btn-outline {
   background: transparent;
+<<<<<<< HEAD
   border: 2px solid #fff;
   color: #fff;
   padding: 14px 28px;
@@ -106,11 +177,36 @@
   width: 100%;
   text-align: center;
   margin-top: 50px;
+=======
+  border: 2px solid white;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: #6f57ff;
+>>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
 }
 
 .brands p {
   font-weight: 500;
+<<<<<<< HEAD
   margin-bottom: 15px;
+=======
+  margin-bottom: 10px;
+}
+
+.brands {
+  width: 100%;
+  text-align: center;
+  padding-left: 30px;
+  margin-top: -140px;
+>>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
 }
 
 .brand-logos {
@@ -119,10 +215,15 @@
   align-items: center;
   gap: 48px;
   flex-wrap: wrap;
+<<<<<<< HEAD
+=======
+  margin-top: 15px;
+>>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
 }
 
 .brand-logos img {
   width: 80px;
+<<<<<<< HEAD
   opacity: 0.9;
   animation: float 3s ease-in-out infinite;
 }
@@ -158,6 +259,13 @@
 
 
 /* === Hero Image === */
+=======
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+
+
+>>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
 .heroImage {
   flex: 1 1 400px;
   min-width: 100px;
@@ -168,6 +276,7 @@
 
 .heroImage img {
   width: 100%;
+<<<<<<< HEAD
   max-width: 450px;
   height: auto;
   object-fit: contain;
@@ -338,6 +447,16 @@
 }
 
 
+=======
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+  animation: fadeIn 1s ease-in-out;
+  margin-top: 80px;
+  margin-left: -180px;
+}
+
+>>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
 /* Smooth Image Entry */
 @keyframes fadeIn {
   from {
@@ -350,21 +469,36 @@
   }
 }
 
+<<<<<<< HEAD
 /* === Responsive Fixes === */
 @media (max-width: 992px) {
   .hero {
     height: auto;
     padding: 120px 20px 60px;
     text-align: center;
+=======
+@media (max-width: 992px) {
+  .hero {
+    padding: 60px 20px;
+    border-radius: 0px;
+>>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
   }
 
   .hero-content {
     flex-direction: column;
+<<<<<<< HEAD
     gap: 30px;
   }
 
   .hero-text h1 {
     font-size: 2.4rem;
+=======
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+>>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
   }
 
   .hero-buttons {
@@ -376,6 +510,7 @@
   }
 
   .heroImage img {
+<<<<<<< HEAD
     max-width: 80%;
     margin-top: 20px;
   }
@@ -402,3 +537,8 @@
   }
 }
 
+=======
+    max-width: 90%;
+  }
+}
+>>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0

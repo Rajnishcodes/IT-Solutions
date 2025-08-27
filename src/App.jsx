@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import About from "./pages/About";
+<<<<<<< HEAD
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
@@ -32,6 +33,11 @@ import HRSoftware from "../Popular/HRSoftware";
 import DataRecovery from "../Popular/DataRecovery";
 import Advertise from "./Businesses/Advertise";
 
+=======
+import WhyChooseUs from "./pages/WhyChooseUs";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
+>>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
 
 const App = () => {
   return (
@@ -42,6 +48,7 @@ const App = () => {
           path="/"
           element={
             <>
+<<<<<<< HEAD
               <Hero />      
             </>
           }
@@ -74,6 +81,16 @@ const App = () => {
         <Route path="/hrsoftware" element={<HRSoftware />} />
         <Route path="/datarecovery" element={<DataRecovery />} />
         <Route path="/advertise" element={<Advertise />} />
+=======
+              <Hero />
+              <WhyChooseUs /> {/* Displayed directly under Hero */}
+            </>
+          }
+        />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} /> 
+        <Route path="/contact" element={<Contact />} />
+>>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
       </Routes>
       <Footer />
     </Router>
