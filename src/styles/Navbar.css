@@ -1,248 +1,228 @@
-<<<<<<< HEAD
-  .navbar {
-    position: absolute; /* 🔑 overlay hero section */
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 18px 40px;
-    background: transparent; /* 🔑 remove white background */
-    color: white;
-    z-index: 1000; /* ensure it's above hero */
-  }
-
-  /* === Logo === */
-  .navbar-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: bold;
-    font-size: 20px;
-    flex-shrink: 0;
-  }
-
-  .navbar-texth1 {
-    color: #ffffff; /* white for hero overlay */
-    font-size: 20px;
-  }
-
-  .navbar-logo img {
-    width: 42px;
-    height: 42px;
-  }
-
-  /* === Links === */
-  .navbar-links {
-    list-style: none;
-    display: flex;
-    gap: 24px;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
-  }
-
-  .navbar-links li {
-    position: relative;
-  }
-
-  .navbar-links li a {
-    text-decoration: none;
-    color: #ffffff; /* white text */
-    font-weight: 500;
-    transition: 0.3s;
-    font-size: 1rem;
-    padding-top: 2px;
-    position: relative;
-  }
-
-  /* ✅ Underline hover effect */
-  .navbar-links li a::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background: #ffffff;
-    transition: width 0.3s ease;
-  }
-
-  .navbar-links li:hover a::after {
-    width: 100%;
-  }
-
-  .navbar-links li a:hover {
-    opacity: 0.8;
-  }
-
-  /* === Dropdown Styles === */
-  .dropdown {
-    position: relative;
-  }
-
-  /* 🔹 Default dropdowns */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #fff;
-    min-width: 200px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    border-radius: 6px;
-    z-index: 2000;
-    padding: 10px 0;
-    list-style: none;
-  }
-
-  .dropdown-content li {
-    padding: 10px 16px;
-  }
-
-  .dropdown-content li a {
-    text-decoration: none;
-    color: #24272c; /* dark text inside dropdown */
-    font-size: 0.95rem;
-    display: block;
-  }
-
-  .dropdown-content li a:hover {
-    background: #f5f5f5;
-  }
-  /* === Reset dropdown trigger buttons === */
-  .dropbtn {
-    background: transparent;
-    border: none;
-    color: #ffffff; /* match navbar links */
-    font-weight: 500;
-    font-size: 1rem;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-    transition: 0.3s;
-  }
-
-  .dropbtn:hover {
-    opacity: 0.8;
-  }
-
-  /* ✅ Optional underline hover effect like links */
-  .dropbtn::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background: #ffffff;
-    transition: width 0.3s ease;
-  }
-
-  .dropdown:hover .dropbtn::after {
-    width: 100%;
-  }
-
-
-  /* 🔹 Mega Dropdown (Services) */
-  .mega-dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #fff;
-    padding: 20px 30px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-    border-radius: 8px;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    min-width: 500px;
-    z-index: 2000;
-  }
-
-  .mega-dropdown h4 {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 12px;
-    color: #24272c;
-  }
-
-  .mega-dropdown button {
-    display: block;
-    width: 100%;
-    text-align: left;
-    padding: 8px 12px;
-    margin: 4px 0;
-    background: #f5f5f5;
-    border: none;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-
-  .mega-dropdown button:hover {
-    background: #e0e0e0;
-  }
-
-  .mega-dropdown .view-all {
-    font-weight: bold;
-    color: #6f57ff;
-    background: transparent;
-  }
-
-  /* === Show class (JS toggle) === */
-  .dropdown-content.show,
-  .mega-dropdown.show {
-    display: block;
-  }
-
-  .mega-dropdown.show {
-    display: grid;
-    margin-left: -155px;
-    transition: background 0.3s ease;
-  }
-
-  /* === Contact link (styled like others but with gradient hover underline) === */
-.contact-btn {
-  font-weight: 500 !important;
-  font-size: 1rem !important;
-  text-decoration: none !important;
-  color: #ffffff !important; /* white text */
-  position: relative !important;
-  padding: 0 !important;
-  border: none !important;
-  background: none !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  transition: 0.3s !important;
+/* === Navbar === */
+.navbar {
+  position: absolute; /* overlay hero section */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 18px 40px;
+  background: transparent;
+  color: white;
+  z-index: 1000;
 }
 
-/* Gradient underline effect */
-.contact-btn::after {
+/* === Logo === */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.navbar-logo img {
+  width: 42px;
+  height: 42px;
+}
+
+.navbar-texth1 {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/* === Links === */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.navbar-links li {
+  position: relative;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: 0.3s;
+  font-size: 1rem;
+  padding-top: 2px;
+  position: relative;
+}
+
+/* ✅ Underline hover effect */
+.navbar-links li a::after {
   content: "";
   position: absolute;
   bottom: -2px;
   left: 0;
   width: 0%;
   height: 2px;
-  background: linear-gradient(90deg, #ff52ec, #6f57ff);
+  background: #ffffff;
   transition: width 0.3s ease;
 }
 
-.contact-btn:hover::after {
+.navbar-links li:hover a::after {
   width: 100%;
 }
 
-.contact-btn:hover {
+.navbar-links li a:hover {
   opacity: 0.8;
 }
 
-/* === Hamburger Button === */
+/* === Dropdown === */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 200px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  z-index: 2000;
+  padding: 10px 0;
+  list-style: none;
+}
+
+.dropdown-content li {
+  padding: 10px 16px;
+}
+
+.dropdown-content li a {
+  text-decoration: none;
+  color: #24272c;
+  font-size: 0.95rem;
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background: #f5f5f5;
+}
+
+.dropbtn {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  transition: 0.3s;
+  position: relative;
+}
+
+.dropbtn:hover {
+  opacity: 0.8;
+}
+
+.dropbtn::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.dropdown:hover .dropbtn::after {
+  width: 100%;
+}
+
+/* === Mega Dropdown === */
+.mega-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  padding: 20px 30px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  min-width: 500px;
+  z-index: 2000;
+}
+
+.mega-dropdown h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #24272c;
+}
+
+.mega-dropdown button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 8px 12px;
+  margin: 4px 0;
+  background: #f5f5f5;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.mega-dropdown button:hover {
+  background: #e0e0e0;
+}
+
+.mega-dropdown .view-all {
+  font-weight: bold;
+  color: #6f57ff;
+  background: transparent;
+}
+
+.dropdown-content.show,
+.mega-dropdown.show {
+  display: block;
+}
+
+.mega-dropdown.show {
+  display: grid;
+  margin-left: -155px;
+  transition: background 0.3s ease;
+}
+
+/* === Contact Button (gradient) === */
+.contact-btn {
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  text-decoration: none !important;
+  color: #ffffff !important;
+  position: relative !important;
+  padding: 8px 16px !important;
+  border: none !important;
+  border-radius: 8px !important;
+  background: linear-gradient(135deg, #ff52ec, #6f57ff) !important;
+  transition: 0.3s ease !important;
+}
+
+.contact-btn:hover {
+  opacity: 0.9;
+}
+
+/* === Hamburger === */
 .hamburger {
-  display: none; /* hidden on desktop */
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 26px;
@@ -260,116 +240,35 @@
   transition: all 0.3s ease;
 }
 
-
-
-/* ✅ Show hamburger on mobile */
+/* ✅ Mobile responsive */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
   }
 
+  .navbar {
+    padding: 16px 20px;
+  }
+
   .navbar-links {
-    display: none; /* hidden by default */
+    display: none;
     flex-direction: column;
     gap: 14px;
     width: 100%;
     padding: 15px 10px;
-    background: rgba(0, 0, 0, 0.85); /* dark dropdown */
+    background: rgba(0, 0, 0, 0.85);
     border-radius: 8px;
   }
 
   .navbar-links.active {
-    display: flex; /* show when toggled */
-=======
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; /* KEY: Allows wrapping on smaller screens */
-  padding: 18px 20px;
-  background: linear-gradient(90deg, #007BFF 20%, #00AFFF 130%);
-  color: white;
-  border-radius: 30px 30px 0 0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  margin: 20px 20px -9px;
-}
-
-.navbar-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: bold;
-  font-size: 20px;
-  flex-shrink: 0;
-}
-
-.navbar-logo img {
-  width: 42px;
-  height: 42px;
-}
-
-.navbar-links {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-  flex-wrap: wrap;
-}
-
-.navbar-links li a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-  transition: 0.3s;
-  font-size: 1rem;
-}
-
-.navbar-links li a:hover {
-  opacity: 0.8;
-}
-
-.contact-btn {
-  padding: 8px 16px;
-  background: linear-gradient(135deg, #ff52ec, #6f57ff);
-  border-radius: 8px;
-  font-weight: bold;
-  border: none;
-  color: white;
-  font-size: 0.9rem;
-  cursor: pointer;
-  margin-top: 8px;
-}
-
-/* 🔻 Responsive Fixes for Small Screens */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 16px;
-    gap: 12px;
-  }
-
-  .navbar-links {
-    flex-direction: column;
-    gap: 12px;
-    width: 100%;
-    padding-left: 10px; /* ✅ Add this for spacing */
-    background-color: transparent; /* Optional: set bg if needed */
-  }
-
-  .navbar-links li a {
-    font-size: 1rem;
-    color: white; /* ✅ Ensure it's visible on mobile */
+    display: flex;
   }
 
   .contact-btn {
-    align-self: flex-start;
-    margin-top: 6px;
-    margin-left: 0; /* ✅ Reset margin */
+    width: 100%;
+    text-align: center;
   }
 }
-
 
 @media (max-width: 480px) {
   .navbar-logo {
@@ -388,6 +287,5 @@
   .contact-btn {
     font-size: 0.85rem;
     padding: 6px 12px;
->>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
   }
 }

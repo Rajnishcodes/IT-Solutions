@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import About from "./pages/About";
-<<<<<<< HEAD
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
@@ -32,32 +31,32 @@ import PaymentGateway from "../Popular/PaymentGateway";
 import HRSoftware from "../Popular/HRSoftware";
 import DataRecovery from "../Popular/DataRecovery";
 import Advertise from "./Businesses/Advertise";
-
-=======
-import WhyChooseUs from "./pages/WhyChooseUs";
-import Services from "./pages/Services";
-import Contact from "./pages/Contact";
->>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
+import WhyChooseUs from "./pages/WhyChooseUs"; // kept from other branch
 
 const App = () => {
   return (
     <Router>
       <Navbar />
       <Routes>
+        {/* Home */}
         <Route
           path="/"
           element={
             <>
-<<<<<<< HEAD
-              <Hero />      
+              <Hero />
+              <WhyChooseUs /> {/* Optional section below Hero */}
             </>
           }
         />
         <Route path="/home" element={<Home />} />
+
+        {/* Main Pages */}
         <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} /> 
+        <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/partners" element={<Partners />} />
+
+        {/* Service Pages */}
         <Route path="/awsservice" element={<AwsService />} />
         <Route path="/vmwareservice" element={<VMWareService />} />
         <Route path="/analyticsservice" element={<AnalyticsService />} />
@@ -74,23 +73,17 @@ const App = () => {
         <Route path="/mobileappdevelopment" element={<MobileAppDevelopment />} />
         <Route path="/qatesting" element={<QATesting />} />
         <Route path="/datascience" element={<DataScience />} />
+
+        {/* Popular Pages */}
         <Route path="/stockmarket" element={<StockMarket />} />
         <Route path="/accountingsoftware" element={<AccountingSoftware />} />
         <Route path="/retailbilling" element={<RetailBilling />} />
         <Route path="/paymentgateway" element={<PaymentGateway />} />
         <Route path="/hrsoftware" element={<HRSoftware />} />
         <Route path="/datarecovery" element={<DataRecovery />} />
+
+        {/* Business */}
         <Route path="/advertise" element={<Advertise />} />
-=======
-              <Hero />
-              <WhyChooseUs /> {/* Displayed directly under Hero */}
-            </>
-          }
-        />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} /> 
-        <Route path="/contact" element={<Contact />} />
->>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
       </Routes>
       <Footer />
     </Router>

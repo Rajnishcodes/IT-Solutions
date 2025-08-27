@@ -1,9 +1,5 @@
 .services {
-<<<<<<< HEAD
-  background: linear-gradient(90deg, #007BFF 20%, #00AFFF 130%);
-=======
-  background: linear-gradient(145deg, #3f2b96, #a8c0ff);
->>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
+  background: linear-gradient(145deg, #3f2b96, #a8c0ff); /* Chose the visually richer gradient */
   color: white;
   padding: 12px 20px 30px;
   margin: 10px 20px 30px;
@@ -33,23 +29,13 @@
 }
 
 .services-card {
-<<<<<<< HEAD
-  background: #ffffff;
-  padding: 30px 20px;
-  width: 300px;
-  border-radius: 30px 67px 47px;
-  padding: 1.5rem;
-  box-shadow: 0 7px 32px rgba(0, 0, 0, 0.7);
-   
-=======
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.05); /* Kept translucent glassmorphism look */
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 30px 20px;
   width: 300px;
-  border-radius: 16px;
+  border-radius: 30px 67px 47px; /* Used your custom border-radius for uniqueness */
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
->>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
+  box-shadow: 0 7px 32px rgba(0, 0, 0, 0.7); /* Stronger shadow from HEAD */
 }
 
 .services-card .icon {
@@ -60,28 +46,17 @@
 .services-card h3 {
   font-size: 1.4rem;
   margin-bottom: 10px;
-<<<<<<< HEAD
-  color:#1e1e2f;
-=======
->>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
+  color: #1e1e2f; /* Dark color for readability */
 }
 
 .services-card p {
   font-size: 1rem;
   line-height: 1.5;
-<<<<<<< HEAD
-  color: #1e1e2f;
+  color: #1e1e2f; /* Better readability */
 }
 
 .cta .contact-btn {
-  background: linear-gradient(135deg, #ff52ec, #6f57ff);
-=======
-  color: #e0e0e0;
-}
-
-.cta .contact-btn {
-  background: linear-gradient(135deg, #6f57ff, #7f6bff);
->>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
+  background: linear-gradient(135deg, #ff52ec, #6f57ff); /* Kept vibrant gradient */
   border: none;
   color: white;
   padding: 12px 30px;

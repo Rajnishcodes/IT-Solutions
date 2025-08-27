@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState } from "react";
 import "../styles/Contact.css";
 
@@ -8,6 +7,7 @@ const SimpleContactForm = () => {
     email: "",
     subject: "",
     phone: "",
+    service: "",
     message: "",
   });
 
@@ -48,7 +48,7 @@ const SimpleContactForm = () => {
             <input
               type="text"
               id="name"
-              placeholder="Name *"
+              placeholder="Full Name *"
               value={formData.name}
               onChange={handleChange}
               required
@@ -80,6 +80,20 @@ const SimpleContactForm = () => {
             />
           </div>
 
+          <label htmlFor="service">Choose Service</label>
+          <select
+            id="service"
+            value={formData.service}
+            onChange={handleChange}
+          >
+            <option value="">-- Select a Service --</option>
+            <option value="web">Web Development</option>
+            <option value="mobile">Mobile App Development</option>
+            <option value="cybersecurity">Cybersecurity</option>
+            <option value="cloud">Cloud Solutions</option>
+            <option value="consulting">IT Consulting</option>
+          </select>
+
           <textarea
             id="message"
             placeholder="Message"
@@ -92,37 +106,6 @@ const SimpleContactForm = () => {
           <button type="submit" className="send-btn">
             SEND MESSAGE
           </button>
-=======
-import React from "react";
-import "../styles/Contact.css";
-
-const SimpleContactForm = () => {
-  return (
-    <section className="contact-section">
-      <h1 className="contact-heading">CONTACT US</h1>
-
-      <div className="form-container">
-        <form className="contact-form">
-          <label htmlFor="name">Full Name</label>
-          <input type="text" id="name" placeholder="Full Name" />
-
-          <label htmlFor="email">Email Address</label>
-          <input type="email" id="email" placeholder="Email Address" />
-
-          <label htmlFor="service">Choose Service</label>
-          <select id="service">
-            <option>Web Development</option>
-            <option>Mobile App Development</option>
-            <option>Cybersecurity</option>
-            <option>Cloud Solutions</option>
-            <option>IT Consulting</option>
-          </select>
-
-          <label htmlFor="message">Message</label>
-          <textarea id="message" placeholder="Message" rows="4"></textarea>
-
-          <button type="submit">Submit</button>
->>>>>>> a4657f17d677da2027588233a92a885dbdf04cf0
         </form>
       </div>
     </section>
