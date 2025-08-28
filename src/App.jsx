@@ -31,7 +31,7 @@ import PaymentGateway from "../Popular/PaymentGateway";
 import HRSoftware from "../Popular/HRSoftware";
 import DataRecovery from "../Popular/DataRecovery";
 import Advertise from "./Businesses/Advertise";
-import WhyChooseUs from "./pages/WhyChooseUs"; // kept from other branch
+
 
 const App = () => {
   return (
@@ -44,7 +44,6 @@ const App = () => {
           element={
             <>
               <Hero />
-              <WhyChooseUs /> {/* Optional section below Hero */}
             </>
           }
         />

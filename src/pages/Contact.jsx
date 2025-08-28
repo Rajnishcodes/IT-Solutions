@@ -80,20 +80,6 @@ const SimpleContactForm = () => {
             />
           </div>
 
-          <label htmlFor="service">Choose Service</label>
-          <select
-            id="service"
-            value={formData.service}
-            onChange={handleChange}
-          >
-            <option value="">-- Select a Service --</option>
-            <option value="web">Web Development</option>
-            <option value="mobile">Mobile App Development</option>
-            <option value="cybersecurity">Cybersecurity</option>
-            <option value="cloud">Cloud Solutions</option>
-            <option value="consulting">IT Consulting</option>
-          </select>
-
           <textarea
             id="message"
             placeholder="Message"

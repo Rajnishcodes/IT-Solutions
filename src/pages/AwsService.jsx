@@ -1,6 +1,6 @@
 import React from "react";
 import { FaAws, FaCloud, FaServer, FaShieldAlt, FaDatabase } from "react-icons/fa";
-import "../styles/AWSService.css";
+import "../styles/AwsService.css";
 
 const AWSService = () => {
   const awsFeatures = [
