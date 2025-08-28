@@ -115,7 +115,7 @@ const Navbar = () => {
           <Link to="/partners" className="partner-btn">Partners</Link>
         </li>
         <li>
-          <Link to="/casestudies" className="casestudy-btn">Case Studies</Link>
+          <Link to="/contact" className="casestudy-btn">Case Studies</Link>
         </li>
         <li>
           <Link to="/contact" className="contact-btn">Contact</Link>
