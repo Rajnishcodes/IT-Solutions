@@ -28,7 +28,6 @@ const Footer = () => {
             <li><Link to="/about">About Us</Link></li>
             <li>Offers ⚡</li>
             <li>Careers</li>
-            <li>Press</li>
             <li>Blog</li>
             <li><Link to="/contact">Contact Us</Link></li>
           </ul>
@@ -39,9 +38,9 @@ const Footer = () => {
           <h4>For Businesses</h4>
           <ul>
             <li><Link to="/advertise">Advertise With Us</Link></li>
-            <li>Write with Us</li>
-            <li>Sell With Us</li>
-            <li>Editorial Policy</li>
+            <li><Link to="/writewithus">Write with Us</Link></li>
+            <li><Link to="/sellwithus">Sell With Us</Link></li>
+            
           </ul>
         </div>
 

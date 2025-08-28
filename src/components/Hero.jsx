@@ -20,6 +20,7 @@ import { Link } from "react-router-dom";
 import BroadcomLogo from "../assets/broadcomLogo.png";
 import AwsLogo from "../assets/awsLogo.png";
 import AzureLogo from "../assets/azureLogo.png";
+import MicrosoftLogo from "../assets/microsoftLogo.png";
 import "../styles/Hero.css";
 
 const Hero = () => {
@@ -44,7 +45,7 @@ const Hero = () => {
   ];
 
   const partnership = [
-    { logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg", name: "Microsoft Cloud Solution Provider" },
+    { logo: MicrosoftLogo, name: "Microsoft Cloud Solution Provider" },
     { logo: BroadcomLogo, name: "Broadcom Partner" },
     { logo: AwsLogo, name: "AWS Partner Network" },
     { logo: AzureLogo, name: "Azure Partner" }

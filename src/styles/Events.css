@@ -1,0 +1,181 @@
+/* === Hero Section === */
+.event-hero {
+  background: url("../assets/heroImage.png") no-repeat center center / cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.event-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.event-hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* === Features Section === */
+.event-features {
+  padding: 80px 20px;
+  background: #f9fbfd;
+  text-align: center;
+}
+
+.event-features h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.event-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px 20px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.event-icon {
+  font-size: 40px;
+  color: #2575fc;
+  margin-bottom: 20px;
+}
+
+/* === Upcoming Events Section === */
+.upcoming-events {
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.upcoming-events h2 {
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.upcoming-card {
+  background: #f9fbfd;
+  border-radius: 15px;
+  padding: 25px 20px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.upcoming-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-date {
+  display: inline-block;
+  background: #2575fc;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.event-btn {
+  background: linear-gradient(135deg, #6f57ff, #2575fc);
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.event-btn:hover {
+  background: linear-gradient(135deg, #2575fc, #1e3c72);
+}
+
+/* === CTA Section === */
+.event-cta {
+  background: linear-gradient(135deg, #6f57ff, #ff52ec);
+  text-align: center;
+  padding: 70px 20px;
+  color: #fff;
+}
+
+.event-cta h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.event-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.event-cta .contact-btn {
+  background: #2575fc;
+  color: #fff;
+  border: none;
+  padding: 14px 34px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.event-cta .contact-btn:hover {
+  background: #1e3c72;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .event-hero h1 {
+    font-size: 2.2rem;
+  }
+  .event-hero p {
+    font-size: 1rem;
+  }
+  .event-cta h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-hero {
+    padding: 70px 15px 50px;
+  }
+  .event-hero h1 {
+    font-size: 1.8rem;
+  }
+  .event-hero p {
+    font-size: 0.95rem;
+  }
+  .event-cta p {
+    font-size: 1rem;
+  }
+}

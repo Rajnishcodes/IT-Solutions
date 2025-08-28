@@ -31,6 +31,9 @@ import PaymentGateway from "../Popular/PaymentGateway";
 import HRSoftware from "../Popular/HRSoftware";
 import DataRecovery from "../Popular/DataRecovery";
 import Advertise from "./Businesses/Advertise";
+import WriteWithUs from "./Businesses/WriteWithUs";
+import SellWithUs from "./Businesses/SellWithUs";
+import Events from "./pages/Events";
 
 
 const App = () => {
@@ -72,6 +75,7 @@ const App = () => {
         <Route path="/mobileappdevelopment" element={<MobileAppDevelopment />} />
         <Route path="/qatesting" element={<QATesting />} />
         <Route path="/datascience" element={<DataScience />} />
+        <Route path="/events" element={<Events />} />
 
         {/* Popular Pages */}
         <Route path="/stockmarket" element={<StockMarket />} />
@@ -83,6 +87,8 @@ const App = () => {
 
         {/* Business */}
         <Route path="/advertise" element={<Advertise />} />
+        <Route path="/writewithus" element={<WriteWithUs />} />
+        <Route path="/sellwithus" element={<SellWithUs />} />
       </Routes>
       <Footer />
     </Router>
