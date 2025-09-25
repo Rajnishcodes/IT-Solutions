@@ -70,7 +70,7 @@
 
 /* === CTA Section === */
 .datacenter-cta {
-  background: #f5f7fa;
+  background: linear-gradient(135deg, #6f57ff, #ff52ec);;
   text-align: center;
   padding: 70px 20px;
 }

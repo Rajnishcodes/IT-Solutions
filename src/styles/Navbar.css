@@ -5,9 +5,8 @@
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* logo left, hamburger right */
   align-items: center;
-  flex-wrap: wrap;
   padding: 18px 40px;
   background: transparent;
   color: white;
@@ -151,13 +150,14 @@
   top: 100%;
   left: 0;
   background: #fff;
-  padding: 20px 30px;
+  padding: 20px 10px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
   border-radius: 8px;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  gap: 20px;
   min-width: 500px;
   z-index: 2000;
+  transform: translateX(-20%); /* align better under Services */
 }
 
 .mega-dropdown h4 {
@@ -198,7 +198,6 @@
 
 .mega-dropdown.show {
   display: grid;
-  margin-left: -155px;
   transition: background 0.3s ease;
 }
 
@@ -229,6 +228,7 @@
   height: 20px;
   cursor: pointer;
   z-index: 1100;
+  margin-left: auto; /* push to right */
 }
 
 .hamburger span {
@@ -241,6 +241,15 @@
 }
 
 /* ✅ Mobile responsive */
+@media (max-width: 1024px) {
+  .mega-dropdown {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    min-width: unset;
+  }
+}
+
 @media (max-width: 768px) {
   .hamburger {
     display: flex;

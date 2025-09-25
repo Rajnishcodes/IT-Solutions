@@ -1,26 +1,15 @@
 import React from "react";
 import { 
-  FaLaptopCode, 
-  FaHandsHelping, 
-  FaChartBar,
-  FaCloud,
-  FaDatabase,
-  FaShieldAlt,
-  FaServer,
-  FaNetworkWired,
-  FaKey,
-  FaLock,
-  FaProjectDiagram,
-  FaThumbsUp,
-  FaRocket,
-  FaShieldAlt as FaGuarantee,
-  FaUserTie
+  FaLaptopCode, FaHandsHelping, FaChartBar, FaCloud, FaDatabase, FaShieldAlt,
+  FaServer, FaNetworkWired, FaKey, FaLock, FaProjectDiagram, FaThumbsUp,
+  FaRocket, FaShieldAlt as FaGuarantee, FaUserTie
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import BroadcomLogo from "../assets/broadcomLogo.png";
 import AwsLogo from "../assets/awsLogo.png";
 import AzureLogo from "../assets/azureLogo.png";
 import MicrosoftLogo from "../assets/microsoftLogo.png";
+import BackgroundVideo from "../assets/backgroundVideo.mp4";
 import "../styles/Hero.css";
 
 const Hero = () => {
@@ -53,8 +42,14 @@ const Hero = () => {
 
   return (
     <>
-      {/* Hero Section */}
+      {/* Hero Section with Background Video */}
       <section className="hero" id="home">
+        <video autoPlay loop muted playsInline className="hero-video">
+          <source src={BackgroundVideo} type="video/mp4" />
+        </video>
+
+        <div className="hero-overlay"></div> {/* dark overlay for readability */}
+
         <div className="hero-content">
           <div className="hero-text">
             <h1>
