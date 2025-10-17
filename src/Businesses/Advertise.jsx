@@ -1,6 +1,7 @@
 import React from "react";
 import { FiTrendingUp, FiTarget, FiUsers, FiCheckCircle } from "react-icons/fi";
 import "./Advertise.css";
+import HeroVideo from "../assets/BackgroundVideo.mp4"; // Add your video file here
 
 const advertiseFeatures = [
   {
@@ -59,14 +60,19 @@ const plans = [
 const Advertise = () => {
   return (
     <div className="advertise-page">
-      {/* Hero Section */}
+      {/* Hero Section with Video */}
       <section className="advertise-hero">
-        <h1>Advertise With Us 🚀</h1>
-        <p>
-          Boost your brand visibility by reaching thousands of potential
-          customers worldwide.
-        </p>
-        <button className="cta-btn">Get Started</button>
+        <video autoPlay loop muted playsInline className="hero-video">
+          <source src={HeroVideo} type="video/mp4" />
+        </video>
+        <div className="hero-content">
+          <h1>Advertise With Us 🚀</h1>
+          <p>
+            Boost your brand visibility by reaching thousands of potential
+            customers worldwide.
+          </p>
+          <button className="cta-btn">Get Started</button>
+        </div>
       </section>
 
       {/* Why Advertise Features */}

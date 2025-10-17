@@ -8,6 +8,7 @@ import {
   FiHeadphones,
 } from "react-icons/fi";
 import "./SellWithUs.css";
+import BackgroundVideo from "../assets/BackgroundVideo.mp4";
 
 const sellerBenefits = [
   {
@@ -42,14 +43,23 @@ const processSteps = [
 const SellWithUs = () => {
   return (
     <div className="sell-page">
-      {/* Hero Section */}
+      {/* Hero Section with Video */}
       <section className="sell-hero">
-        <h1>Sell With Us 🛒</h1>
-        <p>
-          Expand your business by joining our marketplace. Connect with more
-          customers and increase your sales effortlessly.
-        </p>
-        <button className="cta-btn">Start Selling Today</button>
+        <video
+          className="sell-video"
+          src="/src/assets/BackgroundVideo.mp4"
+          autoPlay
+          muted
+          loop
+        />
+        <div className="hero-content">
+          <h1>Sell With Us 🛒</h1>
+          <p>
+            Expand your business by joining our marketplace. Connect with more
+            customers and increase your sales effortlessly.
+          </p>
+          <button className="cta-btn">Start Selling Today</button>
+        </div>
       </section>
 
       {/* Benefits Section */}

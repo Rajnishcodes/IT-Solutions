@@ -10,6 +10,7 @@ import {
   FaCloud,
 } from "react-icons/fa";
 import "../styles/DataScience.css";
+import BackgroundVideo from "../assets/BackgroundVideo.mp4"; // Add your video file here
 
 const dataScienceServices = [
   {
@@ -57,8 +58,11 @@ const dataScienceServices = [
 const DataScience = () => {
   return (
     <div className="ds-page">
-      {/* === Hero Section === */}
+      {/* Hero Section with Video */}
       <header className="ds-hero">
+        <video autoPlay loop muted playsInline className="ds-video">
+          <source src={BackgroundVideo} type="video/mp4" />
+        </video>
         <div className="ds-hero-content">
           <h1>Data Science Services</h1>
           <p>
@@ -68,10 +72,9 @@ const DataScience = () => {
         </div>
       </header>
 
-      {/* === Services Section === */}
+      {/* Services Section */}
       <section className="ds-services">
         <h2>Our Data Science Expertise</h2>
-
         <div className="ds-grid">
           {dataScienceServices.map((service, index) => (
             <div className="ds-card" key={index}>
@@ -83,7 +86,7 @@ const DataScience = () => {
         </div>
       </section>
 
-      {/* === CTA Section === */}
+      {/* CTA Section */}
       <section className="ds-cta">
         <h2>Ready to Leverage Data Science?</h2>
         <p>

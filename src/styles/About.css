@@ -1,181 +1,185 @@
-/* Root Container */
-.about-container {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: url("../assets/heroImage.png") no-repeat center center/cover;
-  color: #333;
+/* Root */
+.about-page {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  overflow: hidden;
 }
 
 /* Hero Section */
 .about-hero {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
-
-
-.about-text {
-  flex: 1;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: justify;
-  
-}
-.about-text h1 span{
-  background: linear-gradient(90deg, #ff52ec, #6f57ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.about-text h1 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 1rem;
-  margin-left: -280px;
-  margin-top: 82px;
-}
-
-.about-text p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #ffffff;
-  margin-bottom: 1.2rem;
-  margin-left: -280px;
-  margin-top: 20px;
-}
-
-
-/* White Section */
-.about-highlight {
-  background: #ffffff; /* clean white background */
-  padding: 80px 80px;
-  text-align: center;
-}
-
-.about-text2 {
-  max-width: 100%;
- /* centers the block instead of margin-left */
-  text-align: center;
-}
-
-.about-text2 h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #222;
-  margin-bottom: 15px;
-  margin-top: -50px; /* slight upward adjustment */
-  text-align: center;
   position: relative;
-  margin-left: -10px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
 }
 
-.about-text2 h1::after {
-  content: "";
-  display: block;
-  width: 90px;
-  height: 4px;
-  background: linear-gradient(90deg, #007BFF, #00AFFF);
-  margin: 12px auto 0 auto;
-  border-radius: 2px;
+.about-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(60%);
 }
 
-.about-text2 p {
+.about-hero-content {
+  max-width: 900px;
+  padding: 20px;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.cta-btn {
+  background: #fff;
+  color: #007bff;
+  padding: 12px 30px;
   font-size: 1.1rem;
-  line-height: 1.9;
-  color: #444;
-  margin-top: 20px;
-  text-align: justify; /* makes text aligned neatly on both sides */
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-/* Service List Styling */
-.about-text2 p br {
-  line-height: 2.2;
+.cta-btn:hover {
+  background: #007bff;
+  color: #fff;
+  transform: scale(1.05);
 }
 
-.about-text2 p::first-line {
-  font-weight: 500;
-  color: #007BFF;
+/* Features Section */
+.about-features {
+  background: #f8f9fa;
+  text-align: center;
+  padding: 80px 20px;
 }
 
-/* Responsive Fix */
-@media (max-width: 768px) {
-  .about-text2 {
-    padding: 0 15px;
-  }
-
-  .about-text2 h1 {
-    font-size: 2rem;
-    margin-top: 0;
-  }
-
-  .about-text2 p {
-    font-size: 1rem;
-    line-height: 1.7;
-  }
+.about-features h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
 }
 
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 30px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.about-icon {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.about-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.about-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Journey Section */
+.about-journey {
+  padding: 80px 20px 100px;
+  text-align: center;
+}
+
+.about-journey h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.journey-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.journey-card {
+  background: #fff;
+  padding: 35px 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.journey-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.journey-card h3 {
+  color: #007bff;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.journey-card h4 {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.journey-card p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
 
 /* Responsive */
-@media (max-width: 768px) {
-  .about-text2 {
-    padding: 30px 20px;
-  }
-
-  .about-text2 h1 {
-    font-size: 2rem;
-  }
-
-  .about-text2 p {
-    font-size: 0.95rem;
+@media (max-width: 1024px) {
+  .about-grid,
+  .journey-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* RESPONSIVE BREAKPOINTS */
-
-/* Tablet and smaller */
 @media (max-width: 768px) {
-  .about-hero {
-    flex-direction: column;
-    text-align: center;
+  .about-hero h1 {
+    font-size: 2.2rem;
   }
 
-  .about-text h1 {
-    font-size: 1.8rem;
-  }
-
-  .about-text p {
+  .about-hero p {
     font-size: 1rem;
   }
 
-  .about-timeline {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .about-container {
-    padding: 20px 15px;
-  }
-}
-
-/* Mobile - Very Small Screens */
-@media (max-width: 480px) {
-  .about-text h1 {
-    font-size: 1.5rem;
-  }
-
-  .about-text p,
-  .about-timeline p {
-    font-size: 0.9rem;
-  }
-
-  .about-timeline div {
-    max-width: 90%;
-  }
-
-  .testimonial blockquote {
-    font-size: 1rem;
+  .about-grid,
+  .journey-grid {
+    grid-template-columns: 1fr;
   }
 }

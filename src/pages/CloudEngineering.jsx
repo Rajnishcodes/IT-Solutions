@@ -10,6 +10,7 @@ import {
   FaSyncAlt,
 } from "react-icons/fa";
 import "../styles/CloudEngineering.css";
+import BackgroundVideo from "../assets/BackgroundVideo.mp4"; // Add your video file here
 
 const cloudServices = [
   {
@@ -59,6 +60,9 @@ const CloudEngineering = () => {
     <div className="cloud-page">
       {/* === Hero Section === */}
       <header className="cloud-hero">
+        <video autoPlay loop muted playsInline className="cloud-video">
+          <source src={BackgroundVideo} type="video/mp4" />
+        </video>
         <div className="cloud-hero-content">
           <h1>Cloud Engineering Services</h1>
           <p>

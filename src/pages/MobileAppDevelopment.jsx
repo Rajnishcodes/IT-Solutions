@@ -11,6 +11,7 @@ import {
   FaUserCheck,
 } from "react-icons/fa";
 import "../styles/MobileAppDevelopment.css";
+import BackgroundVideo from "../assets/BackgroundVideo.mp4"; // Add your video file here
 
 const mobileServices = [
   {
@@ -63,13 +64,16 @@ const cardVariants = {
 const MobileAppDevelopment = () => {
   return (
     <div className="mobile-page">
-      {/* === Hero Section === */}
+      {/* === Hero Section with Video === */}
       <motion.header
         className="mobile-hero"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
+        <video autoPlay loop muted playsInline className="mobile-video">
+          <source src={BackgroundVideo} type="video/mp4" />
+        </video>
         <div className="mobile-hero-content">
           <h1>Mobile App Development</h1>
           <p>

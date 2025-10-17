@@ -6,13 +6,17 @@ import {
   FaFingerprint,
   FaCloud,
 } from "react-icons/fa";
-import "../styles/SecurityService.css"; // 👈 new CSS file
+import "../styles/SecurityService.css";
+import BackgroundVideo from "../assets/BackgroundVideo.mp4"; // Add your video file here
 
 const SecurityService = () => {
   return (
     <div className="security-page">
-      {/* === Hero Section === */}
+      {/* === Hero Section with Video === */}
       <header className="security-hero">
+        <video autoPlay loop muted playsInline className="security-video">
+          <source src={BackgroundVideo} type="video/mp4" />
+        </video>
         <div className="security-hero-content">
           <h1>Security Solutions</h1>
           <p>

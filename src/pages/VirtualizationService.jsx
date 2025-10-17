@@ -1,18 +1,16 @@
 import React from "react";
-import {
-  FaServer,
-  FaMicrochip,
-  FaNetworkWired,
-  FaLock,
-  FaCloud,
-} from "react-icons/fa";
-import "../styles/VirtualizationService.css"; // 👈 new CSS file
+import { FaServer, FaMicrochip, FaNetworkWired, FaLock, FaCloud } from "react-icons/fa";
+import "../styles/VirtualizationService.css";
+import BackgroundVideo from "../assets/BackgroundVideo.mp4"; // Add your video file here
 
 const VirtualizationService = () => {
   return (
     <div className="virtualization-page">
-      {/* === Hero Section === */}
+      {/* === Hero Section with Video === */}
       <header className="virtualization-hero">
+        <video autoPlay loop muted playsInline className="virtualization-video">
+          <source src={BackgroundVideo} type="video/mp4" />
+        </video>
         <div className="virtualization-hero-content">
           <h1>Virtualization Solutions</h1>
           <p>

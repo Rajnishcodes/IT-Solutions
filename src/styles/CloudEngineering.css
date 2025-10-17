@@ -1,6 +1,6 @@
 /* === Hero Section === */
 .cloud-hero {
-  background: url("/src/assets/heroImage.png") no-repeat center center / cover;
+  position: relative; /* needed for video overlay */
   width: 100%;
   height: 100vh; 
   display: flex;
@@ -10,6 +10,23 @@
   color: #fff;
   text-align: center;
   padding: 20px;
+  overflow: hidden;
+}
+
+.cloud-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(60%);
+}
+
+.cloud-hero-content {
+  position: relative;
+  z-index: 1;
 }
 
 .cloud-hero h1 {

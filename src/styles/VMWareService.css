@@ -3,21 +3,33 @@
   color: #fff;
 }
 
-/* ✅ Hero Section */
+/* ✅ Hero Section with Video */
 .service-hero {
-  background: url("/src/assets/heroImage.png") no-repeat center center / cover;
+  position: relative;
   width: 100%;
   height: 100vh; 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #fff;
   text-align: center;
-  padding: 20px;
+  overflow: hidden;
+}
+
+.service-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(50%);
 }
 
 .service-hero-content {
+  position: relative;
+  z-index: 1;
   max-width: 700px;
 }
 
@@ -103,8 +115,6 @@
 }
 
 /* ✅ RESPONSIVENESS */
-
-/* Tablets */
 @media (max-width: 1024px) {
   .service-hero {
     height: 50vh;
@@ -123,7 +133,6 @@
   }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
   .service-hero {
     height: 40vh;
@@ -168,7 +177,6 @@
   }
 }
 
-/* Small Mobile */
 @media (max-width: 480px) {
   .service-hero {
     height: 35vh;

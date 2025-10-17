@@ -1,12 +1,17 @@
 import React from "react";
 import { FaDatabase, FaShieldAlt, FaCloudUploadAlt, FaHistory, FaLock } from "react-icons/fa";
-import "../styles/BackupService.css"; // 👈 CSS for styling
+import "../styles/BackupService.css";
+import BackupVideo from "../assets/BackgroundVideo.mp4"; 
 
 const BackupService = () => {
   return (
     <div className="backup-page">
-      {/* === Hero Section === */}
+      {/* === Hero Section with Video === */}
       <header className="backup-hero">
+        <video autoPlay loop muted playsInline className="backup-video">
+          <source src={BackupVideo} type="video/mp4" />
+        </video>
+
         <div className="backup-hero-content">
           <h1>Backup & Recovery Solutions</h1>
           <p>

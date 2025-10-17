@@ -7,13 +7,17 @@ import {
   FaCog,
   FaCloud,
 } from "react-icons/fa";
-import "../styles/DataCenterService.css"; // ✅ custom CSS for Data Center page
+import "../styles/DataCenterService.css";
+import BackgroundVideo from "../assets/BackgroundVideo.mp4"; // Add your video file here
 
 const DataCenterService = () => {
   return (
     <div className="datacenter-page">
-      {/* ✅ Hero Section */}
+      {/* Hero Section with Video */}
       <header className="datacenter-hero">
+        <video autoPlay loop muted playsInline className="datacenter-video">
+          <source src={BackgroundVideo} type="video/mp4" />
+        </video>
         <div className="datacenter-hero-content">
           <h1>Data Center Solutions</h1>
           <p>
@@ -24,7 +28,7 @@ const DataCenterService = () => {
         </div>
       </header>
 
-      {/* ✅ Features Section */}
+      {/* Features Section */}
       <section className="datacenter-features">
         <h2>What We Offer</h2>
         <div className="datacenter-grid">
@@ -84,7 +88,7 @@ const DataCenterService = () => {
         </div>
       </section>
 
-      {/* ✅ CTA Section */}
+      {/* CTA Section */}
       <section className="datacenter-cta">
         <h2>Future-Proof Your Infrastructure</h2>
         <p>

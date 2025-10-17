@@ -1,12 +1,16 @@
 import React from "react";
 import { FaServer, FaCloud, FaLock, FaCogs, FaDatabase } from "react-icons/fa";
-import "../styles/VMWareService.css"; // 👈 same CSS as AWS page for consistency
+import "../styles/VMWareService.css"; 
+import BackgroundVideo from "../assets/BackgroundVideo.mp4"; // Add your video file here
 
 const VMWareService = () => {
   return (
     <div className="service-page">
-      {/* ✅ Hero Section */}
+      {/* ✅ Hero Section with Video */}
       <header className="service-hero">
+        <video autoPlay loop muted playsInline className="service-video">
+          <source src={BackgroundVideo} type="video/mp4" />
+        </video>
         <div className="service-hero-content">
           <h1>VMWare Service Provider</h1>
           <p>

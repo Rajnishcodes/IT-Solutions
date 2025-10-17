@@ -10,6 +10,7 @@ import {
   FaMobileAlt,
 } from "react-icons/fa";
 import "../styles/QATesting.css";
+import BackgroundVideo from "../assets/BackgroundVideo.mp4"; // Add your video file here
 
 const qaServices = [
   {
@@ -57,8 +58,11 @@ const qaServices = [
 const QATesting = () => {
   return (
     <div className="qa-page">
-      {/* === Hero Section === */}
+      {/* === Hero Section with Video === */}
       <header className="qa-hero">
+        <video autoPlay loop muted playsInline className="qa-video">
+          <source src={BackgroundVideo} type="video/mp4" />
+        </video>
         <div className="qa-hero-content">
           <h1>QA & Testing Services</h1>
           <p>

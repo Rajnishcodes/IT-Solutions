@@ -6,13 +6,17 @@ import {
   FaTools,
   FaDatabase,
 } from "react-icons/fa";
-import "../styles/InfrastructureService.css"; // 👈 new CSS file
+import "../styles/InfrastructureService.css";
+import BackgroundVideo from "../assets/BackgroundVideo.mp4"; // Add your video file here
 
 const InfrastructureService = () => {
   return (
     <div className="infra-page">
-      {/* === Hero Section === */}
+      {/* === Hero Section with Video === */}
       <header className="infra-hero">
+        <video autoPlay loop muted playsInline className="infra-video">
+          <source src={BackgroundVideo} type="video/mp4" />
+        </video>
         <div className="infra-hero-content">
           <h1>Infrastructure Services</h1>
           <p>

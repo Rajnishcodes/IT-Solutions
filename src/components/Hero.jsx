@@ -53,8 +53,9 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-text">
             <h1>
-              Powerful <span>Software Solutions</span> for Your Business
+               Powerful <span>Software</span> <span>Solutions</span> for Your Business
             </h1>
+
             <p>
               We build scalable, secure and efficient platforms tailored to your growth.
               Our team of experts is dedicated to delivering innovative IT solutions that drive success.

@@ -8,6 +8,7 @@ import {
   FaCloud,
 } from "react-icons/fa";
 import "../styles/DataEngineering.css";
+import BackgroundVideo from "../assets/BackgroundVideo.mp4"; // add your video file here
 
 const services = [
   {
@@ -45,8 +46,11 @@ const services = [
 const DataEngineering = () => {
   return (
     <div className="data-page">
-      {/* === Hero Section === */}
+      {/* Hero Section with Video */}
       <header className="data-hero">
+        <video autoPlay loop muted playsInline className="data-video">
+          <source src={BackgroundVideo} type="video/mp4" />
+        </video>
         <div className="data-hero-content">
           <h1>Data Engineering Services</h1>
           <p>
@@ -56,7 +60,7 @@ const DataEngineering = () => {
         </div>
       </header>
 
-      {/* === Features Section === */}
+      {/* Features Section */}
       <section className="data-features">
         <h2>Our Data Engineering Capabilities</h2>
         <div className="data-grid">
@@ -70,7 +74,7 @@ const DataEngineering = () => {
         </div>
       </section>
 
-      {/* === CTA Section === */}
+      {/* CTA Section */}
       <section className="data-cta">
         <h2>Make Data Your Competitive Advantage</h2>
         <p>

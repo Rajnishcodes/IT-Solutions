@@ -6,13 +6,19 @@ import {
   FaCogs,
   FaShieldAlt,
 } from "react-icons/fa";
-import "../styles/ApplicationDevelopment.css"; // 👈 new CSS file
+import "../styles/ApplicationDevelopment.css";
+import AppDevVideo from "../assets/BackgroundVideo.mp4"; 
+
 
 const ApplicationDevelopment = () => {
   return (
     <div className="appdev-page">
-      {/* === Hero Section === */}
+      {/* === Hero Section with Background Video === */}
       <header className="appdev-hero">
+        <video autoPlay loop muted playsInline className="appdev-video">
+          <source src={AppDevVideo} type="video/mp4" />
+        </video>
+
         <div className="appdev-hero-content">
           <h1>Application Development Services</h1>
           <p>

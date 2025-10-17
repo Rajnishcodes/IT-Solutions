@@ -1,12 +1,16 @@
 import React from "react";
 import { FaKey, FaUsers, FaSyncAlt, FaShieldAlt, FaLaptopCode } from "react-icons/fa";
-import "../styles/SoftwareLicensing.css"; // 👈 new CSS
+import "../styles/SoftwareLicensing.css";
+import BackgroundVideo from "../assets/BackgroundVideo.mp4"; // Add your video file here
 
 const SoftwareLicensing = () => {
   return (
     <div className="licensing-page">
-      {/* === Hero Section === */}
+      {/* === Hero Section with Video === */}
       <header className="licensing-hero">
+        <video autoPlay loop muted playsInline className="licensing-video">
+          <source src={BackgroundVideo} type="video/mp4" />
+        </video>
         <div className="licensing-hero-content">
           <h1>Software Licensing Solutions</h1>
           <p>

@@ -1,8 +1,8 @@
 /* === Hero Section === */
 .appdev-hero {
-  background: url("/src/assets/heroImage.png") no-repeat center center / cover;
+  position: relative;
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,14 +10,32 @@
   color: #fff;
   text-align: center;
   padding: 20px;
+  overflow: hidden;
 }
 
-.appdev-hero h1 {
+.appdev-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(60%); /* Optional: darken video for better text readability */
+}
+
+.appdev-hero-content {
+  z-index: 2;
+  max-width: 800px;
+}
+
+.appdev-hero-content h1 {
   font-size: 2.8rem;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
-.appdev-hero p {
+.appdev-hero-content p {
   font-size: 1.2rem;
   max-width: 750px;
   margin: 0 auto;
@@ -39,7 +57,7 @@
 
 .appdev-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
 
@@ -67,6 +85,7 @@
   background: linear-gradient(135deg, #6f57ff, #ff52ec);
   text-align: center;
   padding: 70px 20px;
+  color: #fff;
 }
 
 .appdev-cta h2 {
@@ -94,16 +113,16 @@
 }
 
 .appdev-cta .contact-btn:hover {
-  background: #262626;
+  background: #1a1a1a;
 }
 
 /* === Responsive === */
 @media (max-width: 768px) {
-  .appdev-hero h1 {
+  .appdev-hero-content h1 {
     font-size: 2.2rem;
   }
 
-  .appdev-hero p {
+  .appdev-hero-content p {
     font-size: 1rem;
   }
 
@@ -117,11 +136,11 @@
     padding: 70px 15px 50px;
   }
 
-  .appdev-hero h1 {
+  .appdev-hero-content h1 {
     font-size: 1.8rem;
   }
 
-  .appdev-hero p {
+  .appdev-hero-content p {
     font-size: 0.95rem;
   }
 

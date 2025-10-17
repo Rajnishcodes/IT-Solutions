@@ -6,13 +6,18 @@ import {
   FaCamera,
   FaLanguage,
 } from "react-icons/fa";
-import "../styles/AIMLService.css"; // 👈 new CSS file
+import "../styles/AIMLService.css";
+import AIMLBackgroundVideo from "../assets/BackgroundVideo.mp4"; 
 
 const AIMLService = () => {
   return (
     <div className="aiml-page">
-      {/* === Hero Section === */}
+      {/* === Hero Section with Background Video === */}
       <header className="aiml-hero">
+        <video autoPlay loop muted playsInline className="aiml-video">
+          <source src={AIMLBackgroundVideo} type="video/mp4" />
+        </video>
+
         <div className="aiml-hero-content">
           <h1>AI & Machine Learning Services</h1>
           <p>

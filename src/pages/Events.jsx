@@ -7,6 +7,7 @@ import {
   FaHandshake,
 } from "react-icons/fa";
 import "../styles/Events.css";
+import BackgroundVideo from "../assets/BackgroundVideo.mp4"; // Add your video file here
 
 const Events = () => {
   const upcomingEvents = [
@@ -32,8 +33,11 @@ const Events = () => {
 
   return (
     <div className="event-page">
-      {/* === Hero Section === */}
+      {/* Hero Section with Video */}
       <header className="event-hero">
+        <video autoPlay loop muted playsInline className="event-video">
+          <source src={BackgroundVideo} type="video/mp4" />
+        </video>
         <div className="event-hero-content">
           <h1>Join Our Events</h1>
           <p>
@@ -44,7 +48,7 @@ const Events = () => {
         </div>
       </header>
 
-      {/* === Features Section === */}
+      {/* Features Section */}
       <section className="event-features">
         <h2>Why Attend Our Events?</h2>
         <div className="event-grid">
@@ -80,7 +84,7 @@ const Events = () => {
         </div>
       </section>
 
-      {/* === Upcoming Events Section === */}
+      {/* Upcoming Events Section */}
       <section className="upcoming-events">
         <h2>Upcoming Events</h2>
         <div className="events-grid">
@@ -95,7 +99,7 @@ const Events = () => {
         </div>
       </section>
 
-      {/* === CTA Section === */}
+      {/* CTA Section */}
       <section className="event-cta">
         <h2>Don’t Miss Out!</h2>
         <p>

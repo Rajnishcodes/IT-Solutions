@@ -35,14 +35,23 @@ const submissionSteps = [
 const WriteWithUs = () => {
   return (
     <div className="write-page">
-      {/* Hero Section */}
+      {/* Hero Section with Video */}
       <section className="write-hero">
-        <h1>Write With Us ✍️</h1>
-        <p>
-          Join our community of writers and share your insights with the world.
-          Let your words inspire, educate, and reach thousands of readers.
-        </p>
-        <button className="cta-btn">Become a Contributor</button>
+        <video
+          className="hero-video"
+          src="/src/assets/BackgroundVideo.mp4"
+          autoPlay
+          muted
+          loop
+        />
+        <div className="hero-content">
+          <h1>Write With Us </h1>
+          <p>
+            Join our community of writers and share your insights with the world.
+            Let your words inspire, educate, and reach thousands of readers.
+          </p>
+          <button className="cta-btn">Become a Contributor</button>
+        </div>
       </section>
 
       {/* Benefits Section */}

@@ -1,15 +1,34 @@
-/* === Hero Section === */
+/* === Hero Section with Video === */
 .sell-hero {
-  background: url("/src/assets/heroImage.png") no-repeat center center / cover;
+  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  color: #fff;
+  align-items: center;
   text-align: center;
+  color: #fff;
+  overflow: hidden;
   padding: 20px;
+}
+
+.sell-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video covers entire section */
+  z-index: -1;       /* Pushes video behind content */
+  filter: brightness(50%); /* Optional: darken video for better text readability */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 750px;
+  padding: 0 15px;
 }
 
 .sell-hero h1 {
@@ -19,9 +38,8 @@
 
 .sell-hero p {
   font-size: 1.2rem;
-  max-width: 750px;
-  margin: 0 auto 25px;
   line-height: 1.6;
+  margin-bottom: 25px;
 }
 
 .sell-hero .cta-btn {
@@ -79,7 +97,7 @@
   margin-bottom: 20px;
 }
 
-/* === Steps Section === */
+/* === Process Steps Section === */
 .sell-steps {
   padding: 80px 20px;
   text-align: center;
@@ -122,42 +140,7 @@
   margin-right: 8px;
 }
 
-/* === Support Section === */
-.sell-support {
-  padding: 80px 20px;
-  background: #f1f5f9;
-  text-align: center;
-}
-
-.sell-support h2 {
-  font-size: 2.2rem;
-  margin-bottom: 20px;
-}
-
-.sell-support p {
-  font-size: 1.1rem;
-  max-width: 700px;
-  margin: 0 auto 25px;
-  line-height: 1.6;
-}
-
-.support-box {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  background: #fff;
-  padding: 15px 25px;
-  border-radius: 12px;
-  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
-  font-weight: 600;
-}
-
-.support-icon {
-  font-size: 1.5rem;
-  color: #2575fc;
-}
-
-/* === CTA Section === */
+/* === Final CTA Section === */
 .sell-cta {
   background: linear-gradient(135deg, #6f57ff, #ff52ec);
   text-align: center;
@@ -202,19 +185,20 @@
 }
 
 @media (max-width: 768px) {
+  .sell-hero {
+    height: 60vh; /* smaller hero height */
+  }
+
+  .sell-video {
+    display: none; /* hide video on smaller screens for performance */
+  }
+
   .sell-hero h1 {
     font-size: 2.2rem;
   }
 
   .sell-hero p {
     font-size: 1rem;
-  }
-
-  .sell-benefits h2,
-  .sell-steps h2,
-  .sell-support h2,
-  .sell-cta h2 {
-    font-size: 1.8rem;
   }
 
   .benefits-grid,
