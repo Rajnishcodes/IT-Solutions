@@ -52,7 +52,9 @@ const AccountingSoftware = () => {
           Streamline financial management with automation, security, and powerful
           insights designed for businesses of all sizes.
         </p>
+        <a href="/Contact">
         <button className="contact-btn">Request a Demo</button>
+        </a>
       </section>
 
       {/* Features Grid */}

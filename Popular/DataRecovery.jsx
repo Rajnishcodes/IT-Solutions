@@ -65,7 +65,9 @@ const DataRecovery = () => {
             Safeguard your business with modern data recovery solutions. Restore lost
             files, recover corrupted data, and keep your information secure.
           </p>
+          <a href="/Contact">
           <button className="contact-btn">Get Started</button>
+          </a>
         </div>
       </header>
 
