@@ -8,9 +8,9 @@ import {
   FiHeadphones,
 } from "react-icons/fi";
 import "./SellWithUs.css";
-import BackgroundVideo from "../assets/BackgroundVideo.mp4";
+import BackgroundVideo from "../assets/backgroundVideo.mp4";
 
-const sellerBenefits = [
+const sellerBenefits = [  
   {
     title: "Reach More Customers",
     desc: "Get access to thousands of potential buyers and increase your brand visibility.",
@@ -47,7 +47,7 @@ const SellWithUs = () => {
       <section className="sell-hero">
         <video
           className="sell-video"
-          src="/src/assets/BackgroundVideo.mp4"
+          src="/src/assets/backgroundVideo.mp4"
           autoPlay
           muted
           loop

@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Partners.css";
-import BackgroundVideo from "../assets/BackgroundVideo.mp4"; // Add your video file here
+import BackgroundVideo from "../assets/backgroundVideo.mp4"; // Add your video file here
 
 // Partner logos (place them in /assets/partners/)
 import microsoft from "../assets/microsoftLogo.png";

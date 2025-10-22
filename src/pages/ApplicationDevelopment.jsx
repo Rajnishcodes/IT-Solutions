@@ -7,7 +7,7 @@ import {
   FaShieldAlt,
 } from "react-icons/fa";
 import "../styles/ApplicationDevelopment.css";
-import AppDevVideo from "../assets/BackgroundVideo.mp4"; 
+import AppDevVideo from "../assets/backgroundVideo.mp4"; 
 
 
 const ApplicationDevelopment = () => {

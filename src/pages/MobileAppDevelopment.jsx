@@ -11,7 +11,7 @@ import {
   FaUserCheck,
 } from "react-icons/fa";
 import "../styles/MobileAppDevelopment.css";
-import BackgroundVideo from "../assets/BackgroundVideo.mp4"; // Add your video file here
+import BackgroundVideo from "../assets/backgroundVideo.mp4"; // Add your video file here
 
 const mobileServices = [
   {

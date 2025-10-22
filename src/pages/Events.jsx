@@ -7,7 +7,7 @@ import {
   FaHandshake,
 } from "react-icons/fa";
 import "../styles/Events.css";
-import BackgroundVideo from "../assets/BackgroundVideo.mp4"; // Add your video file here
+import BackgroundVideo from "../assets/backgroundVideo.mp4"; // Add your video file here
 
 const Events = () => {
   const upcomingEvents = [

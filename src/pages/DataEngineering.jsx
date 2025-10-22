@@ -8,7 +8,7 @@ import {
   FaCloud,
 } from "react-icons/fa";
 import "../styles/DataEngineering.css";
-import BackgroundVideo from "../assets/BackgroundVideo.mp4"; // add your video file here
+import BackgroundVideo from "../assets/backgroundVideo.mp4"; // add your video file here
 
 const services = [
   {

@@ -39,7 +39,7 @@ const WriteWithUs = () => {
       <section className="write-hero">
         <video
           className="hero-video"
-          src="/src/assets/BackgroundVideo.mp4"
+          src="/src/assets/backgroundVideo.mp4"
           autoPlay
           muted
           loop

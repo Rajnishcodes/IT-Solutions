@@ -1,7 +1,7 @@
 import React from "react";
 import { FiTrendingUp, FiTarget, FiUsers, FiCheckCircle } from "react-icons/fi";
 import "./Advertise.css";
-import HeroVideo from "../assets/BackgroundVideo.mp4"; // Add your video file here
+import HeroVideo from "../assets/backgroundVideo.mp4"; // Add your video file here
 
 const advertiseFeatures = [
   {

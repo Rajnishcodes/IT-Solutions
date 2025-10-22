@@ -1,7 +1,7 @@
 import React from "react";
 import { FaServer, FaCloud, FaLock, FaCogs, FaDatabase } from "react-icons/fa";
 import "../styles/VMWareService.css"; 
-import BackgroundVideo from "../assets/BackgroundVideo.mp4"; // Add your video file here
+import BackgroundVideo from "../assets/backgroundVideo.mp4"; // Add your video file here
 
 const VMWareService = () => {
   return (

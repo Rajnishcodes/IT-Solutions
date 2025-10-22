@@ -1,7 +1,7 @@
 import React from "react";
 import { FaKey, FaUsers, FaSyncAlt, FaShieldAlt, FaLaptopCode } from "react-icons/fa";
 import "../styles/SoftwareLicensing.css";
-import BackgroundVideo from "../assets/BackgroundVideo.mp4"; // Add your video file here
+import BackgroundVideo from "../assets/backgroundVideo.mp4"; // Add your video file here
 
 const SoftwareLicensing = () => {
   return (

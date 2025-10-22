@@ -7,7 +7,7 @@ import {
   FaShieldAlt,
 } from "react-icons/fa";
 import "../styles/AnalyticsService.css";
-import BackgroundVideo from "../assets/BackgroundVideo.mp4";
+import BackgroundVideo from "../assets/backgroundVideo.mp4";
 
 const AnalyticsService = () => {
   return (

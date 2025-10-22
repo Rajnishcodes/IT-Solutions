@@ -7,7 +7,7 @@ import {
   FaLanguage,
 } from "react-icons/fa";
 import "../styles/AIMLService.css";
-import AIMLBackgroundVideo from "../assets/BackgroundVideo.mp4"; 
+import AIMLBackgroundVideo from "../assets/backgroundVideo.mp4"; 
 
 const AIMLService = () => {
   return (

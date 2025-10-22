@@ -10,7 +10,7 @@ import {
   FaCloud,
 } from "react-icons/fa";
 import "../styles/DataScience.css";
-import BackgroundVideo from "../assets/BackgroundVideo.mp4"; // Add your video file here
+import BackgroundVideo from "../assets/backgroundVideo.mp4"; // Add your video file here
 
 const dataScienceServices = [
   {

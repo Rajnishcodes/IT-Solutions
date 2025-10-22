@@ -1,7 +1,7 @@
 import React from "react";
 import { FaDatabase, FaShieldAlt, FaCloudUploadAlt, FaHistory, FaLock } from "react-icons/fa";
 import "../styles/BackupService.css";
-import BackupVideo from "../assets/BackgroundVideo.mp4"; 
+import BackupVideo from "../assets/backgroundVideo.mp4"; 
 
 const BackupService = () => {
   return (
