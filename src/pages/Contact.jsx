@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Contact.css";
-import BackgroundVideo from "../assets/BackgroundVideo.mp4"; // Add your video file here
+import BackgroundVideo from "../assets/backgroundVideo.mp4"; // Add your video file here
 
 const SimpleContactForm = () => {
   const [formData, setFormData] = useState({
