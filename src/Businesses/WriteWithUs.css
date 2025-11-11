@@ -38,6 +38,8 @@
 .write-hero h1 {
   font-size: 3rem;
   margin-bottom: 15px;
+  display: inline-block;
+    margin: 0 auto;
 }
 
 .write-hero p {
@@ -56,6 +58,8 @@
   border-radius: 30px;
   cursor: pointer;
   transition: all 0.3s ease;
+  display: inline-block;
+    margin: 0 auto;
 }
 
 .cta-btn:hover {

@@ -38,6 +38,8 @@
 .advertise-hero h1 {
   font-size: 2.8rem;
   margin-bottom: 15px;
+  display: inline-block;
+    margin: 0 auto;
 }
 
 .advertise-hero p {
