@@ -74,7 +74,9 @@ const QATesting = () => {
 
       {/* === QA Services Grid === */}
       <section className="qa-services">
+        <div className="qa-services h2">
         <h2>Our QA Expertise</h2>
+        </div>
         <div className="qa-grid">
           {qaServices.map((service, index) => (
             <div className="qa-card" key={index}>

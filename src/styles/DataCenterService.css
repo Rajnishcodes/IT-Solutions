@@ -43,27 +43,32 @@
 
 /* Features Section */
 .datacenter-features {
-  padding: 80px 20px;
-  text-align: center;
+  padding: 36px 10px;
+    text-align: center;
+    overflow: auto;
 }
 
 .datacenter-features h2 {
   font-size: 2.2rem;
-  margin-bottom: 40px;
-  color: #222;
+    margin-bottom: 40px;
+    color: #222;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width: 100%;
 }
 
 .datacenter-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 30px;
+  gap: 10px;
 }
 
 .datacenter-card {
-  background: #fff;
-  border-radius: 15px;
-  padding: 30px 20px;
-  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.08);
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -150,5 +155,9 @@
 
   .datacenter-cta p {
     font-size: 1rem;
+  }
+
+  .datacenter-features{
+    padding:40px 20px;
   }
 }

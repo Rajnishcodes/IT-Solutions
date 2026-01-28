@@ -9,9 +9,10 @@
 
 /* === Hero Section === */
 .rb-hero {
-  background: url("/src/assets/retailbilling.png") no-repeat center center / cover;
+  position: relative;
+  background: url("/src/assets/retailbilling.png") no-repeat center / cover;
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,11 +20,27 @@
   color: #fff;
   text-align: center;
   padding: 20px;
+  overflow: hidden;
 }
+
+/* Overlay for readability */
+.rb-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.rb-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
 .rb-hero h1 {
   font-size: 2.7rem;
   margin-bottom: 1rem;
 }
+
 .rb-hero p {
   font-size: 1.2rem;
   max-width: 700px;
@@ -36,6 +53,7 @@
   padding: 4rem 2rem;
   text-align: center;
 }
+
 .rb-features h2 {
   font-size: 2rem;
   margin-bottom: 2.5rem;
@@ -45,55 +63,62 @@
 /* Grid */
 .rb-grid {
   display: grid;
-  grid-template-columns: repeat(4, 2fr);
+  grid-template-columns: repeat(4, 1fr); /* FIXED */
   gap: 2rem;
 }
 
 /* Cards */
 .rb-card {
-  background: white;
+  background: #ffffff;
   border-radius: 1rem;
   padding: 2rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .rb-card:hover {
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
   transform: translateY(-6px);
 }
+
 .rb-icon {
   font-size: 2.5rem;
   color: #111827;
   margin-bottom: 1rem;
 }
+
 .rb-card h3 {
   font-size: 1.3rem;
   margin-bottom: 0.8rem;
   color: #111827;
 }
+
 .rb-card p {
   font-size: 1rem;
   color: #4b5563;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 /* === CTA Section === */
 .rb-cta {
-  background: linear-gradient(135deg, #6f57ff, #ff52ec);;
+  background: linear-gradient(135deg, #6f57ff, #ff52ec);
   color: white;
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 70px 20px;
 }
+
 .rb-cta h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+
 .rb-cta p {
   max-width: 650px;
   margin: 0 auto 2rem;
   font-size: 1.1rem;
   opacity: 0.9;
 }
+
 .contact-btn {
   background: white;
   color: #064e3b;
@@ -104,6 +129,46 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .contact-btn:hover {
   background: #f3f4f6;
+}
+
+/* === Responsive === */
+@media (max-width: 992px) {
+  .rb-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .rb-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .rb-hero p {
+    font-size: 1rem;
+  }
+
+  .rb-cta h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .rb-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rb-card {
+    padding: 1.5rem;
+  }
+
+  .rb-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .rb-hero p {
+    font-size: 0.95rem;
+  }
 }
