@@ -37,7 +37,7 @@ const Navbar = () => {
       <div className="navbar-logo">
         <img src={image} alt="Logo" />
         <div className="navbar-texth1">
-          <span>IT Solution Builder</span>
+          <span>IT Solutions Builder</span>
         </div>
       </div>
 

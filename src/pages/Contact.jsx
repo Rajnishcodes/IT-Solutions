@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState } from "react"; 
 import "../styles/Contact.css";
-import BackgroundVideo from "../assets/backgroundVideo.mp4"; // Add your video file here
+import BackgroundVideo from "../assets/backgroundVideo.mp4"; // Video file
 
 const SimpleContactForm = () => {
   const [formData, setFormData] = useState({
@@ -12,12 +12,57 @@ const SimpleContactForm = () => {
     message: "",
   });
 
+  // ========== Additional Feature: Validation Errors ==========
+  const [errors, setErrors] = useState({
+    email: "",
+    phone: "",
+  });
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
+
+    // ========== Additional Feature: Real-time Validation ==========
+    if (e.target.id === "email") {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(e.target.value)) {
+        setErrors((prev) => ({ ...prev, email: "Invalid email" }));
+      } else {
+        setErrors((prev) => ({ ...prev, email: "" }));
+      }
+    }
+
+    if (e.target.id === "phone") {
+      const phoneRegex = /^\d{10}$/; // only 10-digit numbers
+      if (e.target.value && !phoneRegex.test(e.target.value)) {
+        setErrors((prev) => ({ ...prev, phone: "Invalid Phone number" }));
+      } else {
+        setErrors((prev) => ({ ...prev, phone: "" }));
+      }
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // ========== Additional Feature: Pre-submit Validation ==========
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phoneRegex = /^\d{10}$/;
+
+    if (!emailRegex.test(formData.email)) {
+      alert("Invalid email");
+      return;
+    }
+
+    if (formData.phone && !phoneRegex.test(formData.phone)) {
+      alert("Invalid Phone number");
+      return;
+    }
+
+    if (!formData.name || !formData.message) {
+      alert("Name and Message are required");
+      return;
+    }
+
     try {
       const res = await fetch("http://localhost:5000/api/contact", {
         method: "POST",
@@ -57,14 +102,20 @@ const SimpleContactForm = () => {
                 onChange={handleChange}
                 required
               />
-              <input
-                type="email"
-                id="email"
-                placeholder="Email *"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
+              <div style={{ position: "relative" }}>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email *"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+                {/* ========== Additional Feature: Inline Error ========= */}
+                {errors.email && (
+                  <span className="error-text">{errors.email}</span>
+                )}
+              </div>
             </div>
 
             <div className="form-row">
@@ -75,13 +126,19 @@ const SimpleContactForm = () => {
                 value={formData.subject}
                 onChange={handleChange}
               />
-              <input
-                type="text"
-                id="phone"
-                placeholder="Contact Number"
-                value={formData.phone}
-                onChange={handleChange}
-              />
+              <div style={{ position: "relative" }}>
+                <input
+                  type="text"
+                  id="phone"
+                  placeholder="Contact Number"
+                  value={formData.phone}
+                  onChange={handleChange}
+                />
+                {/* ========== Additional Feature: Inline Error ========= */}
+                {errors.phone && (
+                  <span className="error-text">{errors.phone}</span>
+                )}
+              </div>
             </div>
 
             <textarea

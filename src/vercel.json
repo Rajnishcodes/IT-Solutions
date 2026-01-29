@@ -1,8 +1,8 @@
 {
-  "version": 2,
-  "public": "public",
-  "cleanUrls": true,
   "rewrites": [
-    { "source": "/old-path", "destination": "/new-path" }
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }
