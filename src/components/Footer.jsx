@@ -65,11 +65,13 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} IT Solution Builder. All rights reserved.</p>
+        <p>Founded in 2021, built on trust, innovation, and excellence</p>
+        <p>All rights reserved.</p>
         <div className="footer-links-bottom">
-          <a href="#">Cancellation & Refund</a>
-          <a href="#">Terms of Use</a>
-          <a href="#">Privacy</a>
+          <a href="#">Privacy & Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Disclaimer</a>
+          <a href="/contact">Contact Us</a>
         </div>
       </div>
     </footer>
