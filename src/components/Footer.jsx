@@ -26,8 +26,8 @@ const Footer = () => {
           <h4>About IT Solution Builder</h4>
           <ul>
             <li><Link to="/about">About Us</Link></li>
-            <li>Offers ⚡</li>
-            <li>Careers</li>
+            <li>Offers </li>
+            <li><Link to="/careers">Careers</Link></li>
             <li>Blog</li>
             <li><Link to="/contact">Contact Us</Link></li>
           </ul>

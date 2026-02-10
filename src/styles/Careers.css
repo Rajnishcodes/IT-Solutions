@@ -1,0 +1,276 @@
+/* ===== BASE ===== */
+body {
+  font-family: Inter, sans-serif;
+  margin: 0;
+}
+
+/* ===== HERO SECTION ===== */
+.careers-hero {
+  position: relative;
+  height: 70vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.careers-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(45%);
+  z-index: -1;
+}
+
+.careers-hero-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.careers-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.careers-hero-content p {
+  max-width: 620px;
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+/* ===== MAIN CAREERS LAYOUT ===== */
+.careers-page {
+  display: flex;
+  gap: 40px;
+  padding: 80px 60px;
+  max-width: 1200px;
+  margin: 10px;
+  align-items: flex-start;
+}
+
+
+
+/* FIX: CONTENT WRAPPER */
+.careers-page > .content {
+  flex: 1;
+  min-width: 0;
+  animation: fadeSlide 0.4s ease;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 280px;
+  position: relative;
+  top: 20px;
+  flex-shrink: 0;
+}
+
+.sidebar h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.sidebar p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.sidebar a {
+  color: #ff7a00;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ===== CAREER CARD ===== */
+.career-card {
+  background: #ffffff;
+  padding: 26px;
+  border-radius: 14px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-left: -10px;
+}
+
+.career-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+.career-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ===== TAG & META ===== */
+.tag {
+  color: #00a3c4;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.meta {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+/* ===== ACTION BUTTONS ===== */
+.apply-btn {
+  background: #ff7a00;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.apply-btn:hover {
+  background: #e66e00;
+  transform: translateY(-1px);
+}
+
+.icon-btn {
+  background: #f1f1f1;
+  border-radius: 50%;
+  border: none;
+  width: 38px;
+  height: 38px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+/* ===== MODAL ===== */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  width: 420px;
+  max-width: 90%;
+}
+
+/* ===== PAGINATION ===== */
+.pagination {
+  position: relative;
+  top: 80px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+  margin: 40px 0 0;
+  padding: 16px 0;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  z-index: 10;
+}
+
+.pagination button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.pagination button.active {
+  background: #ff7a00;
+  color: white;
+  border-color: #ff7a00;
+}
+
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.content {
+  animation: fadeSlide 0.4s ease;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ===== SMOOTH PAGE TRANSITION ===== */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .careers-page {
+    flex-direction: column;
+    padding: 50px 24px;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: static;
+  }
+}
+
+/* ===== MOBILE PAGINATION UX ===== */
+@media (max-width: 600px) {
+  .pagination {
+    gap: 8px;
+    padding: 12px 10px;
+    top:10px;
+  }
+
+  .pagination button {
+    flex: 1;
+    padding: 12px 0;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .careers-hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .careers-hero-content p {
+    font-size: 1rem;
+  }
+}

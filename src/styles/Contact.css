@@ -46,12 +46,10 @@
 
 /* Form container (glassmorphism) */
 .form-container {
-  background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   border-radius: 15px;
   padding: 40px 30px;
-  max-width: 900px;
+  max-width: 556px;
   width: 100%;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -124,6 +122,16 @@
   background: linear-gradient(to right, #3a3fc8, #7c83fb);
   transform: translateY(-2px);
 }
+
+.error-text {
+  position: absolute;
+  bottom: -18px;     /* pushes error below input */
+  left: 0;
+  font-size: 0.75rem;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
 
 /* Mobile responsive */
 @media (max-width: 768px) {

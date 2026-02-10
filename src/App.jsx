@@ -33,6 +33,9 @@ import Advertise from "./Businesses/Advertise";
 import WriteWithUs from "./Businesses/WriteWithUs";
 import SellWithUs from "./Businesses/SellWithUs";
 import Events from "./pages/Events";
+import Careers from "./pages/Careers";
+import CareerCard from "./components/CareerCard";
+import ApplyModal from "./components/ApplyModal";
 
 
 const App = () => {
@@ -74,6 +77,9 @@ const App = () => {
         <Route path="/qatesting" element={<QATesting />} />
         <Route path="/datascience" element={<DataScience />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/careercard" element={<CareerCard />} />
+        <Route path="/applymodal" element={<ApplyModal />}/>
 
         {/* Popular Pages */}
         <Route path="/stockmarket" element={<StockMarket />} />
