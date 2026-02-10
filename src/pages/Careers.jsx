@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback } from "react";
 import CareerCard from "../components/CareerCard";
 import ApplyModal from "../components/ApplyModal";
-import { fetchJobs } from "../services/api";
+import { fetchJobs } from "../Services/api";
 import "../styles/Careers.css";
 import BackgroundVideo from "../assets/backgroundVideo.mp4";
 

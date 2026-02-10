@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { submitApplication } from "../services/api";
+import { submitApplication } from "../Services/api";
 
 const ApplyModal = ({ job, onClose }) => {
   const [form, setForm] = useState({
