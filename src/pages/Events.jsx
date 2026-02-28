@@ -13,19 +13,18 @@
     const upcomingEvents = [
       {
         id: 1,
-        date: "Oct 15, 2025",
         title: "AI & Innovation Summit",
         desc: "A 2-day summit exploring AI-driven transformation across industries.",
       },
       {
         id: 2,
-        date: "Nov 3, 2025",
+        
         title: "Future of Web Conference",
         desc: "Dive into modern web technologies, frameworks, and best practices.",
       },
       {
         id: 3,
-        date: "Dec 10, 2025",
+        
         title: "Global Networking Meetup",
         desc: "Connect with professionals and entrepreneurs across the globe.",
       },

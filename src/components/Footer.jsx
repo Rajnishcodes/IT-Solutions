@@ -46,11 +46,7 @@ const Footer = () => {
 
         {/* Newsletter + Socials */}
         <div className="footer-column">
-          <h4>Subscribe for Offers</h4>
-          <form className="newsletter-form">
-            <input type="email" placeholder="Enter Your Email" />
-            <button type="submit">Subscribe</button>
-          </form>
+          
 
           <h4 className="social-title">Let’s Get Social</h4>
           <div className="social-icons">
