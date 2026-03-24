@@ -1,26 +1,97 @@
 /* === Footer Container === */
 .footer {
-  background: #0a1735; /* dark navy */
+  background: #0a1735;
   color: #fff;
   width: 100%;
-  padding: 50px 80px 30px;
+  padding: 30px 50px 20px; /* compact */
   margin-top: 2px;
-  border-radius: 0;
   box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* === Content Layout === */
-.footer-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 40px;
+/* === MAIN LAYOUT === */
+.footer-container {
+  display: flex;
+  gap: 40px; /* reduced */
   max-width: 1400px;
   margin: 0 auto;
+  align-items: flex-start;
 }
 
-.footer-column h4 {
-  margin-bottom: 15px;
+/* === LEFT SIDE (CONTACT INFO) === */
+.footer-contact {
+  flex: 1.2;
+}
+
+.footer-contact-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.footer-contact-title span {
+  color: #ff7a00;
+}
+
+.footer-contact-text {
+  color: #aaa;
+  font-size: 13px;
+  margin: 8px 0 20px;
+}
+
+/* Grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+/* Cards (SMALL) */
+.contact-card {
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 12px;
+  background: rgba(255,255,255,0.02);
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.contact-card:hover {
+  border-color: #ff7a00;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(255, 122, 0, 0.2);
+}
+
+/* Icon */
+.contact-card .icon {
   font-size: 16px;
+  color: #ff7a00;
+  margin-bottom: 6px;
+}
+
+/* Text */
+.contact-card h3 {
+  color: #fff;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.contact-card p {
+  color: #bbb;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* === RIGHT SIDE (FOOTER LINKS) === */
+.footer-content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 70px;
+}
+
+/* Columns */
+.footer-column h4 {
+  margin-bottom: 10px;
+  font-size: 14px;
   font-weight: 600;
   color: #ffffff;
 }
@@ -32,7 +103,7 @@
 }
 
 .footer-column ul li {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   font-size: 14px;
   color: #ccc;
   cursor: pointer;
@@ -47,7 +118,6 @@
   color: #ccc;
   text-decoration: none;
   font-size: 14px;
-  cursor: pointer;
   transition: color 0.3s ease;
 }
 
@@ -55,81 +125,53 @@
   color: #fff;
 }
 
-/* === Newsletter === */
-.newsletter-form {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 20px;
-}
-
-.newsletter-form input {
-  flex: 1;
-  padding: 10px;
-  border-radius: 4px;
-  border: none;
-  outline: none;
-  font-size: 14px;
-}
-
-.newsletter-form button {
-  background: #2563eb; /* blue */
-  color: white;
-  border: none;
-  padding: 10px 18px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.newsletter-form button:hover {
-  background: #1d4ed8;
-}
-
 /* === Social Icons === */
 .social-title {
-  margin-top: 15px;
-  margin-bottom: 8px;
+  margin-top: 10px;
+  margin-bottom: 6px;
+  font-size: 14px;
 }
 
 .social-icons {
   display: flex;
-  gap: 12px;
+  gap: 10px;
 }
 
 .social-icons a {
   color: #ccc;
-  font-size: 20px;
-  transition: color 0.3s ease;
+  font-size: 18px;
+  transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #fff;
+  color: #ff7a00;
+  transform: translateY(-2px);
 }
 
 /* === Footer Bottom === */
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  margin-top: 40px;
-  padding-top: 20px;
+  margin-top: 25px;
+  padding-top: 15px;
   text-align: center;
   color: #aaa;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .footer-bottom p {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .footer-links-bottom {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
   flex-wrap: wrap;
 }
 
 .footer-links-bottom a {
   color: #ccc;
-  font-size: 14px;
+  font-size: 12px;
   transition: color 0.3s ease;
 }
 
@@ -138,25 +180,25 @@
 }
 
 /* === Responsive === */
+@media screen and (max-width: 992px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .footer {
-    padding: 30px 20px;
+    padding: 25px 20px;
     text-align: center;
   }
 
   .footer-content {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .newsletter-form {
-    flex-direction: column;
-  }
-
-  .newsletter-form input,
-  .newsletter-form button {
-    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .social-icons {
